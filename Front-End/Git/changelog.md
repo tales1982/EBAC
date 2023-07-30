@@ -17,3 +17,16 @@
 - Chore/Tarefa mudanças que não afetam o comportamento do software
 # Qual formato de datas devo usar?
 Use todas as datas no formato AAAA-MM-DD. (Exemplo: 2012-06-02 para 2 de Junho de 2012.)
+# Padroes de nomeclatura para mensagens em commits
+
+## Chore - pequena tarefa
+- git commit -m "chore: removendo arquivo.txt"
+
+## Fix - correçoes
+- git commit -m "fix: correçao de media"
+
+## Feat - inclusao de funcionalidade
+- git commit -m "feat: inclusao de funcao pra calcular media"
+
+## Docs - atualizaçao de documentaçao
+- git commit -m "docs: atualizando o changelog.md"
