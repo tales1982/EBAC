@@ -16,18 +16,28 @@ btnEnviar.addEventListener('submit', function (e) {
 })
 
 function caputuraContato() {
-    salvarContatosNome.push(inputNome.value);
-    salvarContatosTel.push(inputNumero.value);
+     
+
+    if(salvarContatosTel.includes(inputNumero.value)){
+        alert("Esse numero ja esta registrado na agenda.");
+        return;
+    }else{
+        salvarContatosNome.push(inputNome.value);
+        salvarContatosTel.push(inputNumero.value);
+    }
 }
 
 function atualizarFormulario() {
     listaContatos.innerHTML = '';
 
+    /*if(salvarContatosNome.includes(salvarContatosNome.value)){
+        alert("Esse numero ja esta registrado na agenda.")
+    }*/
         for (let i = 0; i < salvarContatosNome.length; i++) {
         const adcionarLinha = document.createElement('li');
         adcionarLinha.innerHTML = `<img src="./img/userAgenda.png" alt="Agenda" class="img"> Nome: <b class="stiloLinha">${salvarContatosNome[i]}</b>, Telefone: <b class="stiloLinha">${salvarContatosTel[i]}</b>`;
         listaContatos.appendChild(adcionarLinha);
-   
+            
     }
     
 }
