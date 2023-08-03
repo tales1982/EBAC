@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>jQuery</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://code.jquery.com/jquery-3.7.0.min.js"defer></script>
+  <script src="main.js"defer></script>
+</head>
+<body>
+<header>
+  <h1>Galeria de fotos</h1>
+  <button type="button">Nova imagem +</button>
+</header>
+
+<form>
+  <h2>Inserir nova imagem</h2>
+  <input id="indereco-imagem-nova" type="url" required placeholder="Url da imagem" />
+  <button type="submit"> Adicionar</button>
+  <button type="reset" id="botao-cancelar">Cancelar</button>
+</form>
+<UL>
+  <li>
+      <img src="./images_M9/images/foto1.jpg" alt="pintura de um gato">
+      <div class="overlay-imagen-link">
+        <a href="./images_M9/images/foto1.jpg" title="Ver imagen no tamanho real" target="_blank">Ver imagem no tamanho real</a>
+      </div>
+  </li>
+  <li>
+    <img src="./images_M9/images/foto2.jpg" alt="pintura de um gato">
+    <div class="overlay-imagen-link">
+      <a href="./images_M9/images/foto2.jpg" title="Ver imagen no tamanho real" target="_blank">Ver imagem no tamanho real</a>
+    </div>
+</li>
+<li>
+  <img src="./images_M9/images/foto3.jpg" alt="pintura de um gato">
+  <div class="overlay-imagen-link">
+    <a href="./images_M9/images/foto3.jpg" title="Ver imagen no tamanho real" target="_blank">Ver imagem no tamanho real</a>
+  </div>
+</li>
+</UL>
+
+</body>
+
+</html>
