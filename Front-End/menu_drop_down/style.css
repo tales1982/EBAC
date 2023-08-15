@@ -1,0 +1,202 @@
+*{
+    margin: 0px;
+    box-sizing: border-box;
+    padding: 0px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container{
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header{
+    padding: 16px 0 0;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 56px;
+}
+
+.subMenu{
+    display: none;
+    position: absolute ;/*evita o deslocamento do meu menu*/
+    left: 0;
+    background-color: #fff;
+    border: 1px solid rgba(255, 0, 0, 0.363);
+    width: 300px;
+    top: 100%;
+}
+
+.menu > li{
+    float: left;
+    list-style: none;
+    padding: 16px;
+    border-top: 4px solid transparent;
+    position: relative;
+}
+
+/*para corrigir o spacamento que nao tem no menu li depois que apliquei o float adciono uma div no meu html e aplico o stilo abaixo na div*/
+.clear{
+    clear: both;
+}
+
+/*efeito para fazer o submenu apareçer quando passar o mause em cima do menu*/
+.menu li:hover .subMenu{
+    display: block;
+}
+
+.menu li:hover{
+    border-color: red;
+}
+
+.subMenu li{
+    display: block;
+    padding: 8px;
+}
+
+.conteudo{
+    display: grid;
+    grid-template-columns: 70% 30%;/*Definindo quantas colunas terei no meu site uma 70 e outra de 30*/
+}
+
+.noticia img{
+    max-width: 100%;
+}
+
+.destaque{
+    margin-bottom: 56px;
+}
+
+.destaque .noticia a{
+    display: flex;
+    font-size: 2em;
+}
+
+.destaque .noticia img{
+    margin-right: 8px;
+}
+
+section h2{
+    margin-bottom: 32px;
+}
+
+aside{
+    padding-left: 40px;
+}
+
+aside .noticia{
+    margin-bottom: 24px;
+}
+
+.noticias{
+    display: grid;
+    /*grid-template-columns: 33.3% 33.3% 33.3%*/;
+    /*posso usar um resumo do codigo acima.*/
+    grid-template-columns: repeat(3, 32.6%);
+    column-gap: 1%;/*espacamentos entre os articulos lembrando que tenho que considera o espacao acima como definir 2% acima tem que ser 98% */
+    row-gap: 5%;/*espacamento da section de cima pra baixo */
+}
+
+/*--------- MEDIA QUERY -----------*/
+
+@media screen and (max-width:767px){
+    .conteudo{
+        display: block;
+    }
+
+    .container{
+        max-width: 90%;
+    }
+
+
+    .destaque .noticia a{
+        display: block;
+        font-size: 1.5em;
+    }
+
+    .destaque .noticia img{
+        margin-right: 0px;
+
+    }
+
+    .noticias{
+        display: block;
+    }
+
+    .noticias .noticia{
+        margin-bottom: 32px;
+    } 
+
+    aside{
+        padding-left: 0;
+    }
+
+    header div.container{
+        flex-direction: column;
+    }
+
+    .subMenu{
+        display: block;
+        width: 100%;
+        position: relative;
+        border: none;
+    }
+
+    .menu{
+        display: none;
+    }
+
+    .menu li{
+        clear: both;
+    
+    }
+
+    .subMenu li{
+        display: block;
+        padding: 8px;
+    }
+
+    .botaoMenu{
+        display: flex;
+        justify-content: center;
+        margin-top: 16px;
+        padding-bottom: 16px;
+    }
+
+    .botaoMenu button{
+        padding: 8px;
+    }
+
+}
+
+@media screen and (min-width: 768px) and (max-width:1023px){
+.container{
+    max-width: 90%;
+}
+
+.botaoMenu{
+    display: none;
+}
+
+.destaque .noticia a{
+    font-size: 1.5em;
+}
+
+.noticias{
+    grid-template-columns: repeat(2, 49%);
+}
+
+}
+
+@media screen and (min-width: 1024px){
+    .botaoMenu{
+        display: none;
+    }
+}
+
