@@ -1,0 +1,14 @@
+*{
+    margin: 0px;
+    box-sizing: border-box;
+    padding: 0px;
+}
+
+
+time{
+    display: block;
+}
+
+.post{
+    margin-bottom: 24px;
+}
