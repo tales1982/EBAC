@@ -1,0 +1,20 @@
+*{
+    margin: 0px;
+    box-sizing: border-box;
+    padding: 0px;
+    color: #fff;
+}
+
+body{
+    background-color: #000;
+    margin-left: 50px;
+    padding: 50px;
+}
+
+#preco p{
+    width: 300px;
+}
+
+.container00{
+    margin-top: 100px;
+}
