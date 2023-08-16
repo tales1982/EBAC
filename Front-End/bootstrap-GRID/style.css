@@ -1,0 +1,29 @@
+.edita{
+    margin-top: 50px;
+}
+
+.aside{
+    background-color: green;
+}
+
+.aside img{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.coluna{
+    background-color: orange;
+}
+
+.coluna img{
+    margin-top: 20px;
+}
+
+.container h1{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 10px;
+}
