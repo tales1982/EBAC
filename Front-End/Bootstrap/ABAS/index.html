@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./lib/cdn.jsdelivr.net_npm_bootstrap@5.3.1_dist_css_bootstrap.min.css">
+    <script src="./lib/cdn.jsdelivr.net_npm_bootstrap@5.3.1_dist_js_bootstrap.bundle.min.js" defer></script>
+    <script src="main.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <header id="cabecario">
+        <!--cabecario resposivo desktop e celular que segue o link do inten de acordo com a rolagen da pagina.-->
+        <div class="navbar navbar-expand-lg">
+            <div class="container">
+                <h1>Titulo do site</h1>
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu4">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <nav class="collapse navbar-collapse justify-content-end" id="menu4">
+                    <ul class="nav navbar-nav nav-pills">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#inicio">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#produtos">Produtos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#promocoes">Promocoes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contato">Contato</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <div data-bs-spy="scroll" data-bs-target="#cabecario">
+        <section id="inicio">
+            <h2>Inicio</h2>
+        </section>
+        <section id="produtos">
+            <h2>Produtos</h2>
+            <div class="container">
+                <nav class="nav nav-tabs"><!--Posso nudar o estilo de abas para botoes so alterar o nav-tabs para nav-pills-->
+                    <button data-bs-toggle="tab" data-bs-target="#aba1" type="button" class="nav-link active">Eletronicos</button>
+                    <button data-bs-toggle="tab" data-bs-target="#aba2" type="button" class="nav-link">Moda Masculina</button>
+                    <button data-bs-toggle="tab" data-bs-target="#aba3" type="button" class="nav-link">Moda Feminina</button>
+                </nav>
+                <div class="tab-content">
+                    <div class="tab-pane active" id="aba1">
+                        conteudo da aba eletronicos
+                    </div>
+                    <div class="tab-pane" id="aba2">
+                        Moda Masculina
+                    </div>
+                    <div class="tab-pane" id="aba3">
+                        Produtos da aba Moda Feminina
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <section id="promocoes">
+            <h2>Promocoes</h2>
+        </section>
+        <section id="contato">
+            <h2>Contato</h2>
+        </section>
+    </div>
+
+</body>
+
+</html>
