@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./lib/cdn.jsdelivr.net_npm_bootstrap@5.3.1_dist_css_bootstrap.min.css">
+    <script src="./lib/cdn.jsdelivr.net_npm_bootstrap@5.3.1_dist_js_bootstrap.bundle.min.js" defer></script>
+    <script src="main.js" defer></script>
+    <script src="main.js"defer></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header id="cabecario">
+        <!--cabecario resposivo desktop e celular que segue o link do inten de acordo com a rolagen da pagina.-->
+        <div class="navbar navbar-expand-lg">
+            <div class="container">
+                <h1>Titulo do site</h1>
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu4">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <nav class="collapse navbar-collapse justify-content-end" id="menu4">
+                    <ul class="nav navbar-nav nav-pills">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#inicio">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#produtos">Produtos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#promocoes">Promocoes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contato">Contato</a>
+                        </li>
+                    </ul>
+                </nav>
+                <button id="btn-checar-email" type="button" class="btn btn-warning">Checar caixa de entrada</button>
+            </div>
+        </div>
+    </header>
+
+    </div>
+ <!--Criando um toasts-->
+ <div class="toast-container position-fixed border-0 end-0 p-3">
+    <div class="toast" id="mensagem-alerta">
+        <header class="toast-header">
+            <strong>Importante</strong>
+        </header>
+        <div class="toast-body">
+            Voce possui 10 mensagens nao lidas
+        </div>
+        <div class="mt-2 pt-2 border-top">
+            <button data-bs-dismiss="toast" type="button" class="btn btn-danger">Descarta</button>
+        </div>
+        
+    </div>
+ </div>
+</body>
+
+</html>

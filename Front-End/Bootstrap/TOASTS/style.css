@@ -1,0 +1,24 @@
+.navbar-nav .nav-link.active {
+    color: #fff;
+}
+
+.nav-link{
+text-align: center;
+}
+
+section{
+    width: auto;
+    height: 100vh;
+    background-color: #f5f1f1;
+    border: 1px solid black;
+    margin:5px;
+    padding-top: 80px;
+}
+
+/*Fixando o menu na tela para aconpanha a barra de rolagen da pagina */
+#cabecario{
+position: sticky;
+top: 0;
+left: 0;
+background-color: #fff;
+}
