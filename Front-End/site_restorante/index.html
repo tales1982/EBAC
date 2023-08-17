@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="lib/cdn.jsdelivr.net_npm_bootstrap@5.3.1_dist_css_bootstrap.min.css">
+    <script src="lib/cdn.jsdelivr.net_npm_bootstrap@5.3.1_dist_js_bootstrap.bundle.min.js" defer></script>
+    <link rel="stylesheet" href="./dist/main.css">
+    <script src="dist/main.js" defer></script>
+</head>
+
+<body>
+    <header class="header-top">
+        <div class="navbar">
+            <div class="container">
+                <div class=" text-header">
+                    <h1 class="display-4">HAPPY HOUSE</h1>
+                    <h4 class="display-6 ajust-h6">SUSHI FOOD</h4>
+                </div>
+                <nav>
+                    <ul class="nav nav-pills">
+                        <li class="nav-item">
+                            <a class="nav-link " href="#"><img src="img/icones/telefone.gif" alt="">Telefone</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><img src="img/icones/usuario.gif" alt="">Minha Conta</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><img src="img/icones/carrinho.gif" alt="">Compras</a>
+                        </li>
+                        <li>
+                            <input type="search" class="form-control" placeholder="Busca">
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <div class="row div-carousel">
+            <div class="col-12">
+                <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="./img/carousel/slide-1-850x182.jpg" class="d-block w-100" alt="beach">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./img/carousel/slide-2-850x182.jpg" class="d-block w-100" alt="dolphin">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/carousel/slide-3-850x182.jpg" class="d-block w-100" alt="polynesia">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div data-bs-spy="scroll" data-bs-target="#cabecario">
+        <section id="produtos">
+            <div class="container">
+                <nav class="nav nav-tabs">
+                    <!--Posso nudar o estilo de abas para botoes so alterar o nav-tabs para nav-pills-->
+                    <button data-bs-toggle="tab" data-bs-target="#aba1" type="button"
+                        class="nav-link active">NOVIDADES</button>
+                    <button data-bs-toggle="tab" data-bs-target="#aba2" type="button" class="nav-link">PRATOS
+                        CHINESES</button>
+                    <button data-bs-toggle="tab" data-bs-target="#aba3" type="button" class="nav-link">SUSHIS</button>
+                    <button data-bs-toggle="tab" data-bs-target="#aba4" type="button" class="nav-link">MENU DO
+                        DIA</button>
+                    <button data-bs-toggle="tab" data-bs-target="#aba5" type="button"
+                        class="nav-link">SOBREMESAS</button>
+                </nav>
+                <div class="tab-content">
+                    <div class="tab-pane active" id="aba1">
+                        <div class="row">
+
+                            <div class="col-3">
+                                <div class="produtos-info">
+                                    <img src="img/carta/novidades/Carpaccio de saumon-500x500.jpeg"
+                                        alt="Carpaccio de saumon">
+                                    <h4>Carpaccio de saumon</h4>
+                                    <div class="linha"></div>
+                                    <p>Carpaccio de Salmão regado com molho Ponzu e suco de maracujá.,</p>
+                                </div>
+                                <div class="produtos-info">
+                                    <img src="img/carta/novidades/Carpaccio de saumon-500x500.jpeg"
+                                        alt="Carpaccio de saumon">
+                                    <h4>Carpaccio de saumon</h4>
+                                    <div class="linha"></div>
+                                    <p>Carpaccio de Salmão regado com molho Ponzu e suco de maracujá.,</p>
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <div class="produtos-info">
+                                    <img src="img/carta/novidades/Carpaccio de St. Jacques-500x500.jpeg"
+                                        alt="Carpaccio de St. Jacques">
+                                    <h4>Carpaccio de St. Jacques</h4>
+                                    <div class="linha"></div>
+                                    <p>Carpaccio de vieiras regado com molho Ponzu e suco de maracujá.,</p>
+                                </div>
+                                <div class="produtos-info">
+                                    <img src="img/carta/novidades/Carpaccio de St. Jacques-500x500.jpeg"
+                                        alt="Carpaccio de St. Jacques">
+                                    <h4>Carpaccio de St. Jacques</h4>
+                                    <div class="linha"></div>
+                                    <p>Carpaccio de vieiras regado com molho Ponzu e suco de maracujá.,</p>
+                                </div>
+
+                            </div>
+                            <div class="col-3">
+                                <div class="produtos-info">
+                                    <img src="img/carta/novidades/TARTAR-500x500.jpeg" alt="Tartare saumon à la truffe">
+                                    <h4>Tartare saumon à la truffe</h4>
+                                    <div class="linha"></div>
+                                    <p>Tártaro de salmão com trufas marinadas em molho ponzu</p>
+                                </div>
+                                <div class="produtos-info">
+                                    <img src="img/carta/novidades/TARTAR-500x500.jpeg" alt="Tartare saumon à la truffe">
+                                    <h4>Tartare saumon à la truffe</h4>
+                                    <div class="linha"></div>
+                                    <p>Tártaro de salmão com trufas marinadas em molho ponzu</p>
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <div class="produtos-info card text-bg-dark card-info">
+                                    <img src="img/bg/sala.jpg" alt="sala de restorante chines" id="img-card">
+                                    <h4>CARD</h4>
+                                    <div class="linha"></div>
+                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius obcaecati
+                                        voluptatum atque provident nihil minus vitae quibusdam odit ut enim possimus
+                                        consequuntur numquam, aliquam quia repellat, dolore, ipsa ab nam asperiores
+                                        totam nulla nemo deserunt esse! Perferendis iure earum vero voluptate, itaque
+                                        accusantium consectetur optio ducimus odio sunt! Assumenda natus dolores
+                                        blanditiis aspernatur, laudantium iste dolore molestias voluptas deleniti, magni
+                                        eos, praesentium dolor cumque architecto itaque! Perferendis ducimus et deleniti
+                                        veritatis. Est, aliquam.voluptas deleniti, magni
+                                        eos, praesentium dolor cumque architecto itaque! Perferendis ducimus et deleniti
+                                    </p>
+                                    <button type="button" class="btn btn-info">Saiba mais</button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>
