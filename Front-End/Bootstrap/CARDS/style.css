@@ -1,0 +1,4 @@
+/*Aplicando transparencia no card para ficar mais legivel*/
+.card-img-overlay{
+background-color: rgba(0, 0, 0, .4);
+}
