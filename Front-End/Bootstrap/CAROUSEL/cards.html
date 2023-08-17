@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cards</title>
+    <link rel="stylesheet" href="./lib/cdn.jsdelivr.net_npm_bootstrap@5.3.1_dist_css_bootstrap.min.css">
+    <script src="./lib/cdn.jsdelivr.net_npm_bootstrap@5.3.1_dist_js_bootstrap.bundle.min.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<div class="container">
+    <!--Carousel simples-->
+    <h1>Carousel</h1>
+    <h2>Apenas o Carrossel automático</h2>
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-interval="3000" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="./img/beach-2179183_1280.jpg" class="d-block w-100" alt="beach">
+            </div>
+            <div class="carousel-item">
+                <img src="./img/dolphin-203875_1280.jpg" class="d-block w-100" alt="dolphin">
+            </div>
+            <div class="carousel-item">
+                <img src="img/polynesia-3021072_1280.jpg" class="d-block w-100" alt="polynesia">
+            </div>
+        </div>
+    </div>
+
+    <br>
+<!--Carousel com controle-->
+<h2>Carrossel com controle</h2>
+<div id="carouselExampleInterval" class="carousel slide" data-bs-interval="3000" data-bs-ride="carousel">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="./img/beach-2179183_1280.jpg" class="d-block w-100" alt="beach">
+        </div>
+        <div class="carousel-item">
+            <img src="./img/dolphin-203875_1280.jpg" class="d-block w-100" alt="dolphin">
+        </div>
+        <div class="carousel-item">
+            <img src="img/polynesia-3021072_1280.jpg" class="d-block w-100" alt="polynesia">
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next </span>
+    </button>
+</div>
+<br>
+<!--Carousel com marcação & controle-->
+<h2>Carrossel automático com marcação & controle</h2>
+<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+              aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+              aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+              aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="./img/beach-2179183_1280.jpg" class="d-block w-100" alt="beach">
+        </div>
+        <div class="carousel-item">
+            <img src="./img/dolphin-203875_1280.jpg" class="d-block w-100" alt="dolphin">
+        </div>
+        <div class="carousel-item">
+            <img src="img/polynesia-3021072_1280.jpg" class="d-block w-100" alt="polynesia">
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <br>
+    <!--Carrossel automático com controle-->
+    <h2>Carrossel automático com controle</h2>
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="./img/beach-2179183_1280.jpg" class="d-block w-100" alt="beach">
+            </div>
+            <div class="carousel-item">
+                <img src="./img/dolphin-203875_1280.jpg" class="d-block w-100" alt="dolphin">
+            </div>
+            <div class="carousel-item">
+                <img src="img/polynesia-3021072_1280.jpg" class="d-block w-100" alt="polynesia">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <br>
+    <br>
+</div>
+</body>
+
+</html>
