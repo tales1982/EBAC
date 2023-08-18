@@ -1,9 +1,21 @@
 body{
-    background-color: rgb(235, 229, 222);
+    background-color: #e7e6e6;
 }
 .header-top{
     height: 150px;
-    background-color: #cccccc8c;
+    background-color: #dfdcdc;
+}
+
+.li-p{
+    text-align: center;
+    color: rgba(44, 44, 185, 0.822);
+    cursor: pointer;
+}
+
+.li-tel,.li-loguin {
+    opacity: 0;
+    
+    transition: opacity 0.3s ease; /* Adicionando uma transição suave */
 }
 
 .ajust-h6{
@@ -45,6 +57,14 @@ body{
     margin-top: 20px;
     background-color: white;
 }
+.btn-info{
+  align-items: end;
+}
+
+.btn-position{
+    margin-top: 45px;
+    width: 100%;
+}
 
 .produtos-info img{
     width: 450px;
@@ -57,9 +77,16 @@ body{
 }
 
 .card-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     height: 98%;
 }
 
 #img-card{
-    height: auto;
+    height:300px;
+}
+
+.card-info h4{
+    text-align: center;
 }

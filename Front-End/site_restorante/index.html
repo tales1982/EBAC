@@ -8,7 +8,9 @@
     <link rel="stylesheet" href="lib/cdn.jsdelivr.net_npm_bootstrap@5.3.1_dist_css_bootstrap.min.css">
     <script src="lib/cdn.jsdelivr.net_npm_bootstrap@5.3.1_dist_js_bootstrap.bundle.min.js" defer></script>
     <link rel="stylesheet" href="./dist/main.css">
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"defer></script>
     <script src="dist/main.js" defer></script>
+    <script src="compras.js"defer></script>
 </head>
 
 <body>
@@ -21,11 +23,14 @@
                 </div>
                 <nav>
                     <ul class="nav nav-pills">
-                        <li class="nav-item">
+                        <li class="nav-item icone-tel">
                             <a class="nav-link " href="#"><img src="img/icones/telefone.gif" alt="">Telefone</a>
+                            <p class="li-tel li-p">(00)0000-00000</p>
+                            
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item icon-loguin">
                             <a class="nav-link" href="#"><img src="img/icones/usuario.gif" alt="">Minha Conta</a>
+                            <p class="li-p li-loguin">Loguin</p>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#"><img src="img/icones/carrinho.gif" alt="">Compras</a>
@@ -77,66 +82,139 @@
                     <button data-bs-toggle="tab" data-bs-target="#aba2" type="button" class="nav-link">PRATOS
                         CHINESES</button>
                     <button data-bs-toggle="tab" data-bs-target="#aba3" type="button" class="nav-link">SUSHIS</button>
-                    <button data-bs-toggle="tab" data-bs-target="#aba4" type="button" class="nav-link">MENU DO
-                        DIA</button>
-                    <button data-bs-toggle="tab" data-bs-target="#aba5" type="button"
+                    <button data-bs-toggle="tab" data-bs-target="#aba4" type="button"
                         class="nav-link">SOBREMESAS</button>
                 </nav>
                 <div class="tab-content">
                     <div class="tab-pane active" id="aba1">
                         <div class="row">
-
                             <div class="col-3">
-                                <div class="produtos-info">
-                                    <img src="img/carta/novidades/Carpaccio de saumon-500x500.jpeg"
-                                        alt="Carpaccio de saumon">
+                                <div class="produtos-info produto" data-nome="Produto A" data-preco="10.00">
+                                    <img src="img/carta/novidades/carpaccio-saumon.jpg" alt="Carpaccio de saumon">
                                     <h4>Carpaccio de saumon</h4>
                                     <div class="linha"></div>
-                                    <p>Carpaccio de Salmão regado com molho Ponzu e suco de maracujá.,</p>
+                                    <p>Lorem ipsum dolor, adipisieaque mollitia quo facilis optio atque.</p>
+                                    <button type="button" class="btn btn-outline-primary btn-position">Compra</button>
                                 </div>
                                 <div class="produtos-info">
-                                    <img src="img/carta/novidades/Carpaccio de saumon-500x500.jpeg"
-                                        alt="Carpaccio de saumon">
-                                    <h4>Carpaccio de saumon</h4>
+                                    <img src="img/carta/novidades/yakisoba.jpg" alt="KARAAGE DE Frango">
+                                    <h4>Yakisoba tradicional</h4>
                                     <div class="linha"></div>
-                                    <p>Carpaccio de Salmão regado com molho Ponzu e suco de maracujá.,</p>
+                                    <p>Lorem ipsum dolor, adipisieaque mollitia quo facilis optio atque.</p>
+                                    <button type="button" class="btn btn-outline-primary btn-position">Compra</button>
                                 </div>
                             </div>
                             <div class="col-3">
                                 <div class="produtos-info">
-                                    <img src="img/carta/novidades/Carpaccio de St. Jacques-500x500.jpeg"
+                                    <img src="img/carta/novidades/carpaccio_van_sint-jakobsnoten_2_0.jpg"
                                         alt="Carpaccio de St. Jacques">
                                     <h4>Carpaccio de St. Jacques</h4>
                                     <div class="linha"></div>
-                                    <p>Carpaccio de vieiras regado com molho Ponzu e suco de maracujá.,</p>
+                                    <p>Lorem ipsum dolor, adipisieaque mollitia quo facilis optio atque.</p>
+                                    <button type="button" class="btn btn-outline-primary btn-position">Compra</button>
                                 </div>
                                 <div class="produtos-info">
-                                    <img src="img/carta/novidades/Carpaccio de St. Jacques-500x500.jpeg"
-                                        alt="Carpaccio de St. Jacques">
-                                    <h4>Carpaccio de St. Jacques</h4>
+                                    <img src="img/carta/novidades/food.jpg" alt="Carpaccio de St. Jacques">
+                                    <h4>Lombo Agridoce</h4>
                                     <div class="linha"></div>
-                                    <p>Carpaccio de vieiras regado com molho Ponzu e suco de maracujá.,</p>
+                                    <p>Lorem ipsum dolor, adipisieaque mollitia quo facilis optio atque.</p>
+                                    <button type="button" class="btn btn-outline-primary btn-position">Compra</button>
                                 </div>
 
                             </div>
                             <div class="col-3">
                                 <div class="produtos-info">
-                                    <img src="img/carta/novidades/TARTAR-500x500.jpeg" alt="Tartare saumon à la truffe">
+                                    <img src="img/carta/novidades/bb_scsc160101_0246a_r01_v005_x0010.jpg"
+                                        alt="Tartare saumon à la truffe">
                                     <h4>Tartare saumon à la truffe</h4>
                                     <div class="linha"></div>
-                                    <p>Tártaro de salmão com trufas marinadas em molho ponzu</p>
+                                    <p>Lorem ipsum dolor, adipisieaque mollitia quo facilis optio atque.</p>
+                                    <button type="button" class="btn btn-outline-primary btn-position">Compra</button>
                                 </div>
                                 <div class="produtos-info">
-                                    <img src="img/carta/novidades/TARTAR-500x500.jpeg" alt="Tartare saumon à la truffe">
-                                    <h4>Tartare saumon à la truffe</h4>
+                                    <img src="img/carta/novidades/frango-xadrez.jpg" alt="Tartare saumon à la truffe">
+                                    <h4>Frango xadrez</h4>
                                     <div class="linha"></div>
-                                    <p>Tártaro de salmão com trufas marinadas em molho ponzu</p>
+                                    <p>Lorem ipsum dolor, adipisieaque mollitia quo facilis optio atque.</p>
+                                    <button type="button" class="btn btn-outline-primary btn-position">Compra</button>
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <div class="produtos-info card text-bg-success card-info">
+                                    <img src="img/bg/cultura-chinesa.jpg" alt="sala de restorante chines" id="img-card">
+                                    <h4 class="display-6">Sobre a Cultura chinesa</h4>
+                                    <div class="linha"></div>
+                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius obcaecati
+                                        voluptatum atque provident nihil minus vitae quibusdam odit ut enim possimus
+                                        consequuntur numquam, aliquam quia repellat, dolore, ipsa ab nam asperiores
+                                        onsequuntur numquam, aliquam quia repellat, dolore, ipsa ab nam asperiores
+                                        nmhhhjjhhj tetetbkk
+
+                                        eos, praese
+                                        eos, praesentium dolor cumque architecto itaque! Perferendis ducimus et deleniti
+                                    </p>
+                                    <button type="button" class="btn btn-outline-light">Saiba mais</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-content">
+                    <div class="tab-pane" id="aba2">
+                        <div class="row">
+                            <div class="col-3">
+                                <div class="produtos-info">
+                                    <img src="img/carta/pratos_chines/frango-agrodoce.jpg" alt="frango agrodoce">
+                                    <h4>Frango Agrodoce</h4>
+                                    <div class="linha"></div>
+                                    <p>Lorem ipsum dolor, adipisieaque mollitia quo facilis optio atque.</p>
+                                    <button type="button" class="btn btn-outline-primary btn-position">Compra</button>
+                                </div>
+                                <div class="produtos-info">
+                                    <img src="img/carta/pratos_chines/sushi.jpg" alt="KARAAGE DE Frango">
+                                    <h4>Sushi</h4>
+                                    <div class="linha"></div>
+                                    <p>Lorem ipsum dolor, adipisieaque mollitia quo facilis optio atque.</p>
+                                    <button type="button" class="btn btn-outline-primary btn-position">Compra</button>
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <div class="produtos-info">
+                                    <img src="img/carta/pratos_chines/risoto-de-alga.jpg" alt="Risoto de alga">
+                                    <h4>Risoto de alga</h4>
+                                    <div class="linha"></div>
+                                    <p>Lorem ipsum dolor, adipisieaque mollitia quo facilis optio atque.</p>
+                                    <button type="button" class="btn btn-outline-primary btn-position">Compra</button>
+                                </div>
+                                <div class="produtos-info">
+                                    <img src="img/carta/novidades/food.jpg" alt="Carpaccio de St. Jacques">
+                                    <h4>Lombo Agridoce</h4>
+                                    <div class="linha"></div>
+                                    <p>Lorem ipsum dolor, adipisieaque mollitia quo facilis optio atque.</p>
+                                    <button type="button" class="btn btn-outline-primary btn-position">Compra</button>
+                                </div>
+
+                            </div>
+                            <div class="col-3">
+                                <div class="produtos-info">
+                                    <img src="img/carta/pratos_chines/lamen.jpg" alt="Lámen chinês">
+                                    <h4>Lámen chinês</h4>
+                                    <div class="linha"></div>
+                                    <p>Lorem ipsum dolor, adipisieaque mollitia quo facilis optio atque.</p>
+                                    <button type="button" class="btn btn-outline-primary btn-position">Compra</button>
+                                </div>
+                                <div class="produtos-info">
+                                    <img src="img/carta/novidades/frango-xadrez.jpg" alt="Tartare saumon à la truffe">
+                                    <h4>Frango xadrez</h4>
+                                    <div class="linha"></div>
+                                    <p>Lorem ipsum dolor, adipisieaque mollitia quo facilis optio atque.</p>
+                                    <button type="button" class="btn btn-outline-primary btn-position">Compra</button>
                                 </div>
                             </div>
                             <div class="col-3">
                                 <div class="produtos-info card text-bg-dark card-info">
                                     <img src="img/bg/sala.jpg" alt="sala de restorante chines" id="img-card">
-                                    <h4>CARD</h4>
+                                    <h4 class="display-6">Sobre a Cultura chinesa</h4>
                                     <div class="linha"></div>
                                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius obcaecati
                                         voluptatum atque provident nihil minus vitae quibusdam odit ut enim possimus
@@ -148,10 +226,156 @@
                                         veritatis. Est, aliquam.voluptas deleniti, magni
                                         eos, praesentium dolor cumque architecto itaque! Perferendis ducimus et deleniti
                                     </p>
-                                    <button type="button" class="btn btn-info">Saiba mais</button>
+                                    <button type="button" class="btn btn-outline-light">Saiba mais</button>
                                 </div>
                             </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-content">
+                    <div class="tab-pane" id="aba3">
+                        <div class="row">
+                            <div class="col-3">
+                                <div class="produtos-info">
+                                    <img src="img/carta/sushis/Combinado-À-Moda-do-Sushiman.jpg" alt="Sake Nigiri">
+                                    <h4>Sake Nigiri de salmão</h4>
+                                    <div class="linha"></div>
+                                    <p>Lorem ipsum dolor, adipisieaque mollitia quo facilis optio atque.</p>
+                                    <button type="button" class="btn btn-outline-primary btn-position">Compra</button>
+                                </div>
+                                <div class="produtos-info">
+                                    <img src="img/carta/sushis/comida-japonesa-.png" alt="Ikura: Nigiri de salmão">
+                                    <h4>Ikura Nigiri de salmão</h4>
+                                    <div class="linha"></div>
+                                    <p>Lorem ipsum dolor, adipisieaque mollitia quo facilis optio atque.</p>
+                                    <button type="button" class="btn btn-outline-primary btn-position">Compra</button>
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <div class="produtos-info">
+                                    <img src="img/carta/sushis/comida-japonesa.jpg" alt="Kanpachi sashimi">
+                                    <h4>Kanpachi sashimi</h4>
+                                    <div class="linha"></div>
+                                    <p>Lorem ipsum dolor, adipisieaque mollitia quo facilis optio atque.</p>
+                                    <button type="button" class="btn btn-outline-primary btn-position">Compra</button>
+                                </div>
+                                <div class="produtos-info">
+                                    <img src="img/carta/sushis/istockp.jpg" alt="Barco de Sushi">
+                                    <h4>Barco de Sushi</h4>
+                                    <div class="linha"></div>
+                                    <p>Lorem ipsum dolor, adipisieaque mollitia quo facilis optio atque.</p>
+                                    <button type="button" class="btn btn-outline-primary btn-position">Compra</button>
+                                </div>
 
+                            </div>
+                            <div class="col-3">
+                                <div class="produtos-info">
+                                    <img src="img/carta/sushis/japonesa.jpg" alt="Barco de Sushi familhia">
+                                    <h4>Barco de Sushi familhia</h4>
+                                    <div class="linha"></div>
+                                    <p>Lorem ipsum dolor, adipisieaque mollitia quo facilis optio atque.</p>
+                                    <button type="button" class="btn btn-outline-primary btn-position">Compra</button>
+                                </div>
+                                <div class="produtos-info">
+                                    <img src="img/carta/sushis/temaki.jpg" alt="temaki">
+                                    <h4>Temaki Cone de alga</h4>
+                                    <div class="linha"></div>
+                                    <p>Lorem ipsum dolor, adipisieaque mollitia quo facilis optio atque.</p>
+                                    <button type="button" class="btn btn-outline-primary btn-position">Compra</button>
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <div class="produtos-info card text-bg-warning card-info">
+                                    <img src="img/bg/pintura-chinesa.jpg" alt="sala de restorante chines" id="img-card">
+                                    <h4 class="display-6">Sobre a Cultura chinesa</h4>
+                                    <div class="linha"></div>
+                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius obcaecati
+                                        voluptatum atque provident nihil minus vitae quibusdam odit ut enim possimus
+                                        consequuntur numquam, aliquam quia repellat, dolore, ipsa ab nam asperiores
+                                        onsequuntur numquam, aliquam quia repellat, dolore, ipsa ab nam asperiores
+                                        nmhhhjjhhj tetetbkk
+
+                                        eos, praese
+                                        eos, praesentium dolor cumque architecto itaque! Perferendis ducimus et deleniti
+                                    </p>
+                                    <button type="button" class="btn btn-outline-light">Saiba mais</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-content">
+                    <div class="tab-pane" id="aba4">
+                        <div class="row">
+                            <div class="col-3">
+                                <div class="produtos-info">
+                                    <img src="img/carta/sobremesas/1183809-sobremesa-chinesa-sobremesa-chinesa-fundo-foto.jpg"
+                                        alt="Bolo de Mel">
+                                    <h4>Bolo de Mel</h4>
+                                    <div class="linha"></div>
+                                    <p>Lorem ipsum dolor, adipisieaque mollitia quo facilis optio atque.</p>
+                                    <button type="button" class="btn btn-outline-primary btn-position">Compra</button>
+                                </div>
+                                <div class="produtos-info">
+                                    <img src="img/carta/sobremesas/banana-caramelada.jpg" alt="Banana caramelada">
+                                    <h4>Banana caramelada</h4>
+                                    <div class="linha"></div>
+                                    <p>Lorem ipsum dolor, adipisieaque mollitia quo facilis optio atque.</p>
+                                    <button type="button" class="btn btn-outline-primary btn-position">Compra</button>
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <div class="produtos-info">
+                                    <img src="img/carta/sobremesas/depositphotos_108929678-stock-photo-chinese-dessert-with-red-envelope.jpg"
+                                        alt="Bolinhos Doce">
+                                    <h4>Bolinhos Doce</h4>
+                                    <div class="linha"></div>
+                                    <p>Lorem ipsum dolor, adipisieaque mollitia quo facilis optio atque.</p>
+                                    <button type="button" class="btn btn-outline-primary btn-position">Compra</button>
+                                </div>
+                                <div class="produtos-info">
+                                    <img src="img/carta/sobremesas/Doces_01.jpg" alt="Bolos">
+                                    <h4>Bolos Variaveis</h4>
+                                    <div class="linha"></div>
+                                    <p>Lorem ipsum dolor, adipisieaque mollitia quo facilis optio atque.</p>
+                                    <button type="button" class="btn btn-outline-primary btn-position">Compra</button>
+                                </div>
+
+                            </div>
+                            <div class="col-3">
+                                <div class="produtos-info">
+                                    <img src="img/carta/sobremesas/mochis.jpg" alt="Barco de Sushi familhia">
+                                    <h4>Mochis Coloridos</h4>
+                                    <div class="linha"></div>
+                                    <p>Lorem ipsum dolor, adipisieaque mollitia quo facilis optio atque.</p>
+                                    <button type="button" class="btn btn-outline-primary btn-position">Compra</button>
+                                </div>
+                                <div class="produtos-info">
+                                    <img src="img/carta/sobremesas/receita-de-creme-chines-sobremesa-facil-e-deliciosa_970_540_s_c1.jpg"
+                                        alt="creme-chines">
+                                    <h4>Creme chines</h4>
+                                    <div class="linha"></div>
+                                    <p>Lorem ipsum dolor, adipisieaque mollitia quo facilis optio atque.</p>
+                                    <button type="button" class="btn btn-outline-primary btn-position">Compra</button>
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <div class="produtos-info card text-bg-success card-info">
+                                    <img src="img/bg/cultura-chinesa.jpg" alt="sala de restorante chines" id="img-card">
+                                    <h4 class="display-6">Sobre a Cultura chinesa</h4>
+                                    <div class="linha"></div>
+                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius obcaecati
+                                        voluptatum atque provident nihil minus vitae quibusdam odit ut enim possimus
+                                        consequuntur numquam, aliquam quia repellat, dolore, ipsa ab nam asperiores
+                                        onsequuntur numquam, aliquam quia repellat, dolore, ipsa ab nam asperiores
+                                        nmhhhjjhhj tetetbkk
+
+                                        eos, praese
+                                        eos, praesentium dolor cumque architecto itaque! Perferendis ducimus et deleniti
+                                    </p>
+                                    <button type="button" class="btn btn-outline-light">Saiba mais</button>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
