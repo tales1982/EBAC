@@ -21,3 +21,12 @@ itensListaLoguin.addEventListener('click', function() {
     liVisibleLoguin = toggleVisibility('.li-loguin', liVisibleLoguin);
 });
 
+const botoesCompras = document.querySelectorAll('.btn-compras');
+const carrinhoItens = document.querySelector('.carrinho-compras');
+
+botoesCompras.forEach(botao => {
+    botao.addEventListener('click', function() {
+        const itensNoCarrinho = parseInt(carrinhoItens.textContent);
+        carrinhoItens.textContent = itensNoCarrinho + 1;
+    });
+});
