@@ -1,0 +1,119 @@
+#contact{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    }
+    
+    #rede-social{
+    margin-left: 30px;
+    align-items: flex-start;
+    }
+    
+    #rede-social h3, #contact h2{
+        text-align: center;
+    }
+    
+    #rede-social h3,#rede-social i,#contact h2{
+        font-weight: bold;
+        color: $bg-header;
+    }
+    
+    #rede-social p,#contact label{
+        font-size: 1.3em;
+        color: $bg-text;
+        font-weight: bold;
+    
+    }
+
+    .form-div{
+        padding-left: 50px;
+    }
+
+    .adress-paragraph{
+        text-align: center;
+        padding-top: 5px;
+    }
+    
+    .social-links li,.social-links a{
+        list-style: none;
+        text-decoration: none;
+        padding: 10px;
+    }
+    
+    .text-redes-social{
+        color: $bg-text;
+        padding-left: 10px;
+        font-size: .9em;
+    }
+    
+    .btn-color{
+        background-color: $secondary-green;
+        color: $bg-text;
+        font-weight: bold;
+    }
+    
+    .contact-ul{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+    }
+    
+    #contact .col-6 p{
+        text-align: center;
+    }
+
+
+@media screen and (min-width: 768px) and (max-width: 1023px){
+
+    #contact{
+        padding-left: 15px;
+    }
+
+    .contact-ul{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (min-width:374px) and (max-width: 767px){
+
+    #contact  .row{
+        display: grid;
+        grid-template-columns: repeat(1, 100%);
+        padding-top: 100px;
+        padding-bottom: 100px;
+        width: 100%;
+        }
+
+       .row .col-5,.row .col-7{
+          
+            padding-left: 100px;
+            width:90vw;
+        } 
+        
+
+        #rede-social{
+        margin-left: 0px;
+        }
+
+
+        .social-links li,.social-links a{
+            padding: 0px;
+            padding-top: 5px;
+        }
+        
+        .text-redes-social{
+            padding-left: 0px;
+            font-size: 16px;
+        }
+        
+        .contact-ul{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 0px;
+        
+        }
+        
+}

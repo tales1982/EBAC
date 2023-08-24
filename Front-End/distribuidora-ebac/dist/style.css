@@ -1,0 +1,137 @@
+/*
+site com outras font
+
+CORES
+paleta-1
+#012615 background-header
+#01401C
+#D2D904
+#F2E3B3 color-texte / background-sectiom
+#D97A07
+
+paleta-2
+*/
+
+body{
+    font-family: Roboto, sans-serif;
+}
+
+/*Header*/
+.container .text-colored,.bi{
+   color:#F2E3B3;
+   font-weight: bold;
+   font-size: 1.1em;
+}
+
+#menu-navegacao a{
+    color:#D97A07;
+    font-weight: bold;
+   
+}
+
+#cabecalho{
+    height: 100px;
+    background-color:#012615;
+}
+
+.text-header h3{
+    margin-left: 40px;
+    padding: 0px;
+    color:#D97A07;
+}
+
+/*Carousel*/
+#div-carousel{
+    overflow: hidden;
+    max-height: 950px;
+}
+
+#div-carousel img{
+    width: 100vw;
+
+}
+
+/*a propos de nous*/
+section{
+background-color:#F2E3B3;
+}
+
+#apropos-de-nous span{
+color: #01401C;
+}
+
+#apropos-de-nous .linha h2{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-top: 150px;
+    padding-bottom: 50px;
+}
+
+#apropos-de-nous .linha p{
+    padding-top: 15px;
+    font-size: 1.3em;
+    text-align: justify;
+}
+
+/*Abas menu produtos*/
+.icones img{
+    width: 40px;
+    height: auto;
+}
+
+.aba-menu{
+display: flex;
+flex-direction: row;
+justify-content: center;
+
+}
+
+.links-aba{
+    font-weight: bold;
+    color:#012615;
+   font-size: 1.1em;
+   margin: 3px;
+   border: none;
+   height: 50px;
+    margin-top: 50px;
+    border-radius: 10px;
+}
+
+ .links-aba.active, .links-aba:hover{
+    background-color: #D97A07;
+}
+
+.produtos-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding-top: 50px;
+}
+
+.produtos-info img{
+    height: 250px;
+}
+
+.linha-promo {
+    padding-top: 180px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+.linha-promo h2{
+    font-size: 3em;
+    font-weight: bold;
+    color: #D97A07;
+    padding-bottom: 30px;
+}
+
+#carouselExampleInterval img{
+    border-radius: 10px;
+}
+
+
+

@@ -1,0 +1,95 @@
+/*Abas menu produtos*/
+#produtos{
+    padding-top: 60px;
+    }
+    
+    .icones img{
+        width: 40px;
+        height: auto;
+    }
+    
+    .aba-menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+    }
+    
+    .links-aba{
+        font-weight: bold;
+        color:$bg-header;
+       font-size: 1.1em;
+       margin: 3px;
+       border: none;
+       height: 50px;
+        margin-top: 50px;
+        border-radius: 10px;
+    }
+    
+     .links-aba.active, .links-aba:hover{
+        background-color: $bg-text;
+    }
+    
+    .produtos-info{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        padding-top: 50px;
+    }
+    
+    .produtos-info img{
+        height: 250px;
+    }
+    
+    #carouselExampleInterval img{
+        border-radius: 10px;
+    }
+
+
+@media screen and (min-width:768px) and (max-width: 1023px){
+
+        
+        .icones img{
+            width: 35px;
+        }
+        
+        .links-aba{
+        font-size: .7em;
+        }
+
+        .editar-linha{
+            display: grid;
+            grid-template-columns: repeat(2, 49%);
+        }
+
+    .produtos-info{
+        width: 50vw;
+    }
+
+
+}
+
+@media screen and (min-width:374px) and (max-width: 767px){
+    .icones img{
+        width: 35px;
+    }
+    
+    .links-aba{
+    font-size: .7em;
+    }
+
+    .editar-linha{
+        display: grid;
+        grid-template-columns: repeat(2, 49%);
+    }
+
+    .editar-linha .col-3 .produtos-info h4{
+        font-size: 16px;
+    }
+
+.produtos-info{
+    width: 50vw;
+}
+}

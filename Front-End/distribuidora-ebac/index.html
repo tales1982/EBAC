@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" defer></script>
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+    <link rel="stylesheet" href="./build/css/style.css" />
+    <title>New Elvajeff</title>
+</head>
+
+<body>
+    <a id="start"></a>
+    <header class="navbar navbar-expand-lg sticky-top p-4" id="cabecalho">
+        <div class="container">
+            <div class="text-header">
+                <a class="nav-link fs-5" href="#start">
+                    <h1 class="navbar-brand m-0 p-0 section-title fs-1 ">
+                    <span class="text-colored">New</span>
+                </h1>
+                <h3 class="fw-bold fs-3">Elvajeff</h3>
+                </a>
+            </div>
+
+            <!--Começo do Menu Hamburg-->
+            <button class="navbar-toggler menu-hamburg">
+                <span class="navbar-toggler-icon" data-bs-toggle="collapse" data-bs-target="#menu-navegacao">
+                </span>
+            </button>
+            <!--Fim do Menu Hamburg-->
+            <nav class="navbar-collapse collapse justify-content-end" id="menu-navegacao">
+                <ul class="nav nav-pills d-block d-md-flex">
+                    <li class="nav-item fw-bold me-2">
+                        <a class="nav-link fs-5" href="#apropos-de-nous">
+                            <i class="bi bi-house-door fs-2"></i>
+                            À propos du <span class="text-colored">New</span> Elvajeff
+                        </a>
+                    </li>
+                    <li class="nav-item fw-bold me-2">
+                        <a class="nav-link fs-5" href="#promotions">
+                            <i class="bi bi-shop fs-2"></i>
+                            Promotions
+                        </a>
+                    </li>
+                    <li class="nav-item fw-bold me-2">
+                        <a class="nav-link fs-5" href="#produtos">
+                        <i class="bi bi-cup-straw fs-2"></i>
+                        Boissons</a>
+                    </li>
+                    <li class="nav-item fw-bold me-2">
+                        <a class="nav-link fs-5" href="#contact">
+                            <i class="bi bi-chat-left-text fs-2"></i>
+                            Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section id="div-carousel">
+        <div class="carousel slide" data-bs-ride="carousel" id="butao-carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="3000">
+                    <img src="./img/carousel2/biere3.jpg" alt="amis portant un toast avec de la bière">
+                </div>
+                <div class="carousel-item" data-bs-interval="3000">
+                    <img src="./img/carousel2/jameson.jpg" alt="foto bebida alcoolica">
+                </div>
+                <div class="carousel-item" data-bs-interval="3000">
+                    <img src="./img/carousel2/vodka.jpeg" alt="foto bebida alcoolica">
+                </div>
+                <div class="carousel-item" data-bs-interval="3000">
+                    <img src="./img/carousel2/whisky-black-background.jpg" alt="foto bebida alcoolica">
+                </div>
+            </div>
+            <!--Adicionando botoes na slide da imagens idicionar um id na classe carousel slide id="qualquer nome"-->
+            <button class="carousel-control-prev" type="button" data-bs-target="#butao-carousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#butao-carousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#butao-carousel" data-bs-slide-to="0" class="active">
+                </button>
+                <button type="button" data-bs-target="#butao-carousel" data-bs-slide-to="1">
+                </button>
+                <button type="button" data-bs-target="#butao-carousel" data-bs-slide-to="2">
+                </button>
+                <button type="button" data-bs-target="#butao-carousel" data-bs-slide-to="3">
+                </button>
+                <button type="button" data-bs-target="#butao-carousel" data-bs-slide-to="4">
+                </button>
+                <button type="button" data-bs-target="#butao-carousel" data-bs-slide-to="5">
+                </button>
+            </div>
+        </div>
+    </section>
+    <!--A propos-->
+    <section id="apropos-de-nous">
+        <div class="container">
+            <div class="row linha">
+                <h2>Bienvenue chez <span class="text-colored  ms-2 me-2">New</span> <strong>Elvajeff</strong></STROng>
+                </h2>
+                <p>Nous sommes la solution ultime pour les amateurs de boissons en quête de qualité, de variété et de
+                    commodité.
+                    Animés par une passion pour l'excellence, nous nous engageons à offrir une expérience unique d'achat
+                    et de livraison de boissons à travers tout le pays.
+                </p>
+                <p><strong>Notre Mission : </strong>
+                    Chez <span class="text-colored"> New</span> Elvajeff, notre mission est de fournir à nos clients une
+                    sélection inégalée de boissons,
+                    allant des meilleurs spiritueux aux bières et aux vins sélectionnés. Nous croyons que chaque
+                    occasion mérite la boisson parfaite,
+                    c'est pourquoi nous travaillons sans relâche pour proposer un catalogue complet répondant à tous les
+                    goûts et préférences.
+                </p>
+                <p><strong>Ce Qui Nous Rend Spéciaux : </strong>
+                    Variété d'Approvisionnement : Notre vaste gamme de produits comprend des marques renommées ainsi que
+                    des options exclusives,
+                    vous assurant de toujours trouver ce que vous cherchez.
+                </p>
+                <p><strong>Livraison dans Tout le Pays : </strong> Peu importe où vous vous trouvez, nous livrons
+                    directement à votre porte. Grâce à un réseau logistique efficace,
+                    nous nous assurons que vos boissons arrivent en toute sécurité et à temps.
+                </p>
+                <p><strong>Service Client Dédié : </strong> Notre équipe est toujours prête à vous aider. Que ce soit
+                    pour vous guider dans le choix des boissons idéales pour un événement spécial ou pour suivre votre
+                    livraison,
+                    nous sommes là pour vous offrir un support exceptionnel à chaque étape du processus.
+                </p>
+                <p><strong>Simplicité de la Commodité : </strong>Notre processus d'achat est simple et intuitif. Il vous
+                    suffit d'explorer notre site,
+                    de sélectionner vos produits préférés et d'attendre la livraison dans le confort de votre foyer.
+                </p>
+                <p><strong>Engagement envers la Qualité : </strong>Nous attachons de l'importance à la qualité et à
+                    l'authenticité de chaque bouteille.
+                    Nous travaillons uniquement avec des fournisseurs fiables et des produits authentiques,
+                    garantissant une expérience exceptionnelle à chaque gorgée.
+                    Que vous planifiiez une célébration spéciale, souhaitiez vous détendre après une longue journée ou
+                    recherchiez un cadeau pour un être cher,
+                    <span class="text-colored"> New</span> <strong>Elvajeff</strong> est le choix idéal. Rejoignez-nous
+                    et découvrez un nouveau monde de saveurs et de possibilités.
+
+                    À la commodité. À la qualité. À<span class="text-colored "> New</span> <strong>Elvajeff</strong>
+                </p>
+            </div>
+        </div>
+    </section>
+    <!--Menu Aba-->
+    <div data-bs-spy="scroll" data-bs-target="#cabecario">
+        <section id="promotions">
+            <div class="container">
+                <div class="row linha-promo">
+                    <h2>Nos Promotions</h2>
+                </div>
+                <div class="row">
+                    <div class="col-4">
+                    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-inner active" data-bs-interval="10000">
+                                <img src="./img/cards/card1.gif" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="10000">
+                                <img src="./img/cards/card2.gif" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="10000">
+                                <img src="./img/cards/card3.gif" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="10000">
+                                <img src="./img/cards/card4.gif" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="10000">
+                                <img src="./img/cards/card5.gif" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="10000">
+                                <img src="./img/cards/card6.gif" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="10000">
+                                <img src="./img/cards/card7.gif" class="d-block w-100" alt="...">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next </span>
+                        </button>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active" data-bs-interval="10000">
+                                <img src="./img/cards/card1.gif" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="10000">
+                                <img src="./img/cards/card2.gif" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="10000">
+                                <img src="./img/cards/card3.gif" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="10000">
+                                <img src="./img/cards/card4.gif" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="10000">
+                                <img src="./img/cards/card5.gif" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="10000">
+                                <img src="./img/cards/card6.gif" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="10000">
+                                <img src="./img/cards/card7.gif" class="d-block w-100" alt="...">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next </span>
+                        </button>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active" data-bs-interval="10000">
+                                <img src="./img/cards/card1.gif" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="10000">
+                                <img src="./img/cards/card2.gif" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="10000">
+                                <img src="./img/cards/card3.gif" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="10000">
+                                <img src="./img/cards/card4.gif" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="10000">
+                                <img src="./img/cards/card5.gif" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="10000">
+                                <img src="./img/cards/card6.gif" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="10000">
+                                <img src="./img/cards/card7.gif" class="d-block w-100" alt="...">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next </span>
+                        </button>
+                    </div>
+                </div>
+                </div>
+                
+                
+            </div>
+        </section>
+        <section id="produtos">
+            <div class="container">
+                <nav class="nav nav-tabs  aba-menu  pt-3 pb-3">
+                    <!--Posso nudar o estilo de abas para botoes so alterar o nav-tabs para nav-pills-->
+                    <button data-bs-toggle="tab" data-bs-target="#aba1" type="button"
+                        class=" nav-link-subtle links-aba active "><i class="icones"><img src="img/icones/whisky.png"
+                                alt="icone de whisky"></i> Whisky</button>
+                    <button data-bs-toggle="tab" data-bs-target="#aba2" type="button"
+                        class=" nav-link-subtle links-aba"></span><i class="icones"><img src="img/icones/vinho.png"
+                                alt="icone de vins"></i>VINS</button>
+                    <button data-bs-toggle="tab" data-bs-target="#aba3" type="button"
+                        class=" nav-link-subtle links-aba"><i class="icones"><img src="img/icones/bieres.png"
+                                alt="icone de BIÈRES"></i>BIÈRES</button>
+                    <button data-bs-toggle="tab" data-bs-target="#aba4" type="button"
+                        class=" nav-link-subtle links-aba"><i class="icones"><img src="img/icones/Champanhe.png"
+                                alt="icone de CHAMPAGNES"></i>CHAMPAGNES</button>
+                    <button data-bs-toggle="tab" data-bs-target="#aba5" type="button"
+                        class=" nav-link-subtle links-aba"><i class="icones"><img src="img/icones/refri.png"
+                                alt="icone de dinks"></i>SOFT-DRINKS</button>
+                    <button data-bs-toggle="tab" data-bs-target="#aba6" type="button"
+                        class=" nav-link-subtle links-aba"><i class="icones"><img src="img/icones/dinksl.png"
+                                alt="icone de cola-cola"></i>DIVERS</button>
+                </nav>
+                <!--Productor aba1-->
+                <div class="tab-content">
+                    <div class="tab-pane active" id="aba1">
+                        <div class="row editar-linha">
+                            <div class="col-3 ">
+                                <div class="produtos-info produto ">
+                                    <img src="img/promo/redlebel.png" alt="whisky red label">
+                                    <h4>J.Walker Red Label </h4>
+                                    <h6><i class="bi bi-star"></i> 19.60€</h6>
+                                    <div class="linha">
+                                    </div>
+                                </div>
+                                <div class="produtos-info produto ">
+                                    <img src="img/promo/redlebel.png" alt="whisky red label">
+                                    <h4>J.Walker Red Label </h4>
+                                    <h6><i class="bi bi-star"></i> 19.60€</h6>
+                                    <div class="linha">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <div class="produtos-info produto ">
+                                    <img src="img/promo/redlebel.png" alt="whisky red label">
+                                    <h4>J.Walker Red Label </h4>
+                                    <h6><i class="bi bi-star"></i> 19.60€</h6>
+                                    <div class="linha">
+                                    </div>
+                                </div>
+                                <div class="produtos-info produto ">
+                                    <img src="img/promo/redlebel.png" alt="whisky red label">
+                                    <h4>J.Walker Red Label </h4>
+                                    <h6><i class="bi bi-star"></i> 19.60€</h6>
+                                    <div class="linha">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <div class="produtos-info produto ">
+                                    <img src="img/promo/redlebel.png" alt="whisky red label">
+                                    <h4>J.Walker Red Label </h4>
+                                    <h6><i class="bi bi-star"></i> 19.60€</h6>
+                                    <div class="linha">
+                                    </div>
+                                </div>
+                                <div class="produtos-info produto ">
+                                    <img src="img/promo/redlebel.png" alt="whisky red label">
+                                    <h4>J.Walker Red Label </h4>
+                                    <h6><i class="bi bi-star"></i> 19.60€</h6>
+                                    <div class="linha">
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="col-3">
+                                <div class="produtos-info produto ">
+                                    <img src="img/promo/redlebel.png" alt="whisky red label">
+                                    <h4>J.Walker Red Label </h4>
+                                    <h6><i class="bi bi-star"></i> 19.60€</h6>
+                                    <div class="linha">
+                                    </div>
+                                </div>
+                                <div class="produtos-info produto ">
+                                    <img src="img/promo/redlebel.png" alt="whisky red label">
+                                    <h4>J.Walker Red Label </h4>
+                                    <h6><i class="bi bi-star"></i> 19.60€</h6>
+                                    <div class="linha">
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Productor aba2-->
+                <div class="tab-content">
+                    <div class="tab-pane" id="aba2">
+                        <div class="row editar-linha">
+                            <div class="col-3">
+                                <div class="produtos-info produto ">
+                                    <img src="img/bebidas/wine.png" alt="">
+                                    <h4>Cobos Malbec </h4>
+                                    <h6><i class="bi bi-star"></i>260.00€</h6>
+                                </div>
+                                <div class="produtos-info produto ">
+                                    <img src="img/bebidas/wine.png" alt="">
+                                    <h4>Cobos Malbec </h4>
+                                    <h6><i class="bi bi-star"></i>260.00€</h6>
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <div class="produtos-info produto ">
+                                    <img src="img/bebidas/wine.png" alt="">
+                                    <h4>Cobos Malbec </h4>
+                                    <h6><i class="bi bi-star"></i>260.00€</h6>
+                                </div>
+                                <div class="produtos-info produto ">
+                                    <img src="img/bebidas/wine.png" alt="">
+                                    <h4>Cobos Malbec </h4>
+                                    <h6><i class="bi bi-star"></i>260.00€</h6>
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <div class="produtos-info produto ">
+                                    <img src="img/bebidas/wine.png" alt="">
+                                    <h4>Cobos Malbec </h4>
+                                    <h6><i class="bi bi-star"></i>260.00€</h6>
+                                </div>
+                                <div class="produtos-info produto ">
+                                    <img src="img/bebidas/wine.png" alt="">
+                                    <h4>Cobos Malbec </h4>
+                                    <h6><i class="bi bi-star"></i>260.00€</h6>
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <div class="produtos-info produto ">
+                                    <img src="img/bebidas/wine.png" alt="">
+                                    <h4>Cobos Malbec </h4>
+                                    <h6><i class="bi bi-star"></i>260.00€</h6>
+                                </div>
+                                <div class="produtos-info produto ">
+                                    <img src="img/bebidas/wine.png" alt="">
+                                    <h4>Cobos Malbec </h4>
+                                    <h6><i class="bi bi-star"></i>260.00€</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Productor aba3-->
+                <div class="tab-content">
+                    <div class="tab-pane" id="aba3">
+                        <div class="row editar-linha">
+                            <div class="col-3">
+                                <div class="produtos-info produto ">
+                                    <img src="img/bebidas/Heineken-PNG.webp" alt="">
+                                    <h4>Heineken</h4>
+                                    <h6><i class="bi bi-star"></i>1.50€</h6>
+                                </div>
+                                <div class="produtos-info produto ">
+                                    <img src="img/bebidas/Heineken-PNG.webp" alt="">
+                                    <h4>Cobos Malbec </h4>
+                                    <h6><i class="bi bi-star"></i>1.50€</h6>
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <div class="produtos-info produto ">
+                                    <img src="img/bebidas/Heineken-PNG.webp" alt="">
+                                    <h4>Heineken</h4>
+                                    <h6><i class="bi bi-star"></i>1.50€</h6>
+                                </div>
+                                <div class="produtos-info produto ">
+                                    <img src="img/bebidas/Heineken-PNG.webp" alt="">
+                                    <h4>Cobos Malbec </h4>
+                                    <h6><i class="bi bi-star"></i>1.50€</h6>
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <div class="produtos-info produto ">
+                                    <img src="img/bebidas/Heineken-PNG.webp" alt="">
+                                    <h4>Heineken</h4>
+                                    <h6><i class="bi bi-star"></i>1.50€</h6>
+                                </div>
+                                <div class="produtos-info produto ">
+                                    <img src="img/bebidas/Heineken-PNG.webp" alt="">
+                                    <h4>Cobos Malbec </h4>
+                                    <h6><i class="bi bi-star"></i>1.50€</h6>
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <div class="produtos-info produto ">
+                                    <img src="img/bebidas/Heineken-PNG.webp" alt="">
+                                    <h4>Heineken</h4>
+                                    <h6><i class="bi bi-star"></i>1.50€</h6>
+                                </div>
+                                <div class="produtos-info produto ">
+                                    <img src="img/bebidas/Heineken-PNG.webp" alt="">
+                                    <h4>Cobos Malbec </h4>
+                                    <h6><i class="bi bi-star"></i>1.50€</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Productor-aba4-->
+                <div class="tab-content">
+                    <div class="tab-pane" id="aba4">
+                        <div class="row editar-linha">
+                            <div class="col-3">
+                                <div class="produtos-info produto ">
+                                    <img src="img/bebidas/Champagne.png" alt="">
+                                    <h4>Champagne</h4>
+                                    <h6><i class="bi bi-star"></i>11.90€</h6>
+                                </div>
+                                <div class="produtos-info produto ">
+                                    <img src="img/bebidas/Champagne.png" alt="">
+                                    <h4>Champagne</h4>
+                                    <h6><i class="bi bi-star"></i>11.90€</h6>
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <div class="produtos-info produto ">
+                                    <img src="img/bebidas/Champagne.png" alt="">
+                                    <h4>Champagne</h4>
+                                    <h6><i class="bi bi-star"></i>11.90€</h6>
+                                </div>
+                                <div class="produtos-info produto ">
+                                    <img src="img/bebidas/Champagne.png" alt="">
+                                    <h4>Champagne</h4>
+                                    <h6><i class="bi bi-star"></i>11.90€</h6>
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <div class="produtos-info produto ">
+                                    <img src="img/bebidas/Champagne.png" alt="">
+                                    <h4>Champagne</h4>
+                                    <h6><i class="bi bi-star"></i>11.90€</h6>
+                                </div>
+                                <div class="produtos-info produto ">
+                                    <img src="img/bebidas/Champagne.png" alt="">
+                                    <h4>Champagne</h4>
+                                    <h6><i class="bi bi-star"></i>11.90€</h6>
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <div class="produtos-info produto ">
+                                    <img src="img/bebidas/Champagne.png" alt="">
+                                    <h4>Champagne</h4>
+                                    <h6><i class="bi bi-star"></i>11.90€</h6>
+                                </div>
+                                <div class="produtos-info produto ">
+                                    <img src="img/bebidas/Champagne.png" alt="">
+                                    <h4>Champagne</h4>
+                                    <h6><i class="bi bi-star"></i>11.90€</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Productor-soft-drinks-->
+                <div class="tab-content">
+                    <div class="tab-pane" id="aba5">
+                        <div class="row editar-linha">
+                            <div class="col-3">
+                                <div class="produtos-info produto ">
+                                    <img src="img/bebidas/Coca-Cola-PNG-Clipart.png" alt="">
+                                    <h4>Coca-cola</h4>
+                                    <h6><i class="bi bi-star"></i>1.90€</h6>
+                                </div>
+                                <div class="produtos-info produto ">
+                                    <img src="img/bebidas/Coca-Cola-PNG-Clipart.png" alt="">
+                                    <h4>Coca-cola</h4>
+                                    <h6><i class="bi bi-star"></i>1.90€</h6>
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <div class="produtos-info produto ">
+                                    <img src="img/bebidas/Coca-Cola-PNG-Clipart.png" alt="">
+                                    <h4>Coca-cola</h4>
+                                    <h6><i class="bi bi-star"></i>1.90€</h6>
+                                </div>
+                                <div class="produtos-info produto ">
+                                    <img src="img/bebidas/Coca-Cola-PNG-Clipart.png" alt="">
+                                    <h4>Coca-cola</h4>
+                                    <h6><i class="bi bi-star"></i>1.90€</h6>
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <div class="produtos-info produto ">
+                                    <img src="img/bebidas/Coca-Cola-PNG-Clipart.png" alt="">
+                                    <h4>Coca-cola</h4>
+                                    <h6><i class="bi bi-star"></i>1.90€</h6>
+                                </div>
+                                <div class="produtos-info produto ">
+                                    <img src="img/bebidas/Coca-Cola-PNG-Clipart.png" alt="">
+                                    <h4>Coca-cola</h4>
+                                    <h6><i class="bi bi-star"></i>1.90€</h6>
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <div class="produtos-info produto ">
+                                    <img src="img/bebidas/Coca-Cola-PNG-Clipart.png" alt="">
+                                    <h4>Coca-cola</h4>
+                                    <h6><i class="bi bi-star"></i>1.90€</h6>
+                                </div>
+                                <div class="produtos-info produto ">
+                                    <img src="img/bebidas/Coca-Cola-PNG-Clipart.png" alt="">
+                                    <h4>Coca-cola</h4>
+                                    <h6><i class="bi bi-star"></i>1.90€</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Productor-divers-->
+                <div class="tab-content">
+                    <div class="tab-pane" id="aba6">
+                        <div class="row editar-linha">
+                            <div class="col-3">
+                                <div class="produtos-info produto ">
+                                    <img src="img/bebidas/Campari-PNG-Photo-Image.png" alt="">
+                                    <h4>Campari</h4>
+                                    <h6><i class="bi bi-star"></i>14.90€</h6>
+                                </div>
+                                <div class="produtos-info produto ">
+                                    <img src="img/bebidas/Campari-PNG-Photo-Image.png" alt="">
+                                    <h4>Campari</h4>
+                                    <h6><i class="bi bi-star"></i>14.90€</h6>
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <div class="produtos-info produto ">
+                                    <img src="img/bebidas/Campari-PNG-Photo-Image.png" alt="">
+                                    <h4>Campari</h4>
+                                    <h6><i class="bi bi-star"></i>14.90€</h6>
+                                </div>
+                                <div class="produtos-info produto ">
+                                    <img src="img/bebidas/Campari-PNG-Photo-Image.png" alt="">
+                                    <h4>Campari</h4>
+                                    <h6><i class="bi bi-star"></i>14.90€</h6>
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <div class="produtos-info produto ">
+                                    <img src="img/bebidas/Campari-PNG-Photo-Image.png" alt="">
+                                    <h4>Campari</h4>
+                                    <h6><i class="bi bi-star"></i>14.90€</h6>
+                                </div>
+                                <div class="produtos-info produto ">
+                                    <img src="img/bebidas/Campari-PNG-Photo-Image.png" alt="">
+                                    <h4>Campari</h4>
+                                    <h6><i class="bi bi-star"></i>14.90€</h6>
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <div class="produtos-info produto ">
+                                    <img src="img/bebidas/Campari-PNG-Photo-Image.png" alt="">
+                                    <h4>Campari</h4>
+                                    <h6><i class="bi bi-star"></i>14.90€</h6>
+                                </div>
+                                <div class="produtos-info produto ">
+                                    <img src="img/bebidas/Campari-PNG-Photo-Image.png" alt="">
+                                    <h4>Campari</h4>
+                                    <h6><i class="bi bi-star"></i>14.90€</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+        </section>
+    </div>
+    <!--section contact-->
+    <section id="contact">
+            <div class="row">
+                <div class="col-5 form-div">
+                    <h2><i class="bi bi-person-lines-fill"></i> Contact</h2>
+                    <form>
+                        <label for="nome" class="form-label">
+                            Votre nom:</label>
+                        <input type="text" name="nome" id="nome" class="form-control">
+                        <label for="email" class="form-label">
+                            Votre e-mail</label>
+                        <input type="email" name="email" id="email" class="form-control">
+                        <label for="mensagem" class="form-label">Votre message</label>
+                        <textarea name="mensagem" id="mensagem" cols="30" rows="10" class="form-control"></textarea>
+                        <div class="form-check form-switch">
+                            <label for="aceito-termeos" class="form-check-label">J'ai lu et j'accepte les conditions du site</label>
+                        <input type="checkbox" name="aceito-termeos" id="aceito-termeos" class="form-check-input">
+                        </div>
+                        <button class="btn btn-color">Enviar</button>
+                    </form>
+                </div>
+                <div class="col-7">
+                    <div id="rede-social">
+                        <div class="row">
+                            <h3 class="section-title fs-4 text-colored test-h3">
+                                <i class="bi bi-hand-thumbs-up-fill"></i>
+                                Social Media
+                            </h3>
+                            <div class="contact-ul">
+                                <ul class="social-links">
+                                    <li>
+                                        <h3>FABRICIO PERES </h3>
+                                    </li>
+                                    <li class="fs-4">
+                                        <i class="bi bi-whatsapp text-colored"> </i><span class="text-redes-social"><strong> 691 561 491</strong</span>
+                                    </li>
+                                <li class="fs-4">
+                                    <i class="bi bi-envelope-at"><span class="text-redes-social"> fabricio14@hotmail.com</span></i>
+                                </li>
+                                <li class="fs-4">
+                                    <i class="bi bi-telephone-inbound"> <span class="text-redes-social">352 54 47 61</span> </i>
+                                </li>
+                            </ul>
+                            <ul class="social-links">
+                                <li>
+                                    <h3>M. BERNARD</h3>
+                                </li>
+                                
+                                <li class="fs-4">
+                                    <i class="bi bi-whatsapp text-colored"> </i><span class="text-redes-social"><strong> 921 355 88</strong</span>
+                                </li>
+                            <li class="fs-4">
+                                <i class="bi bi-envelope-at"><span class="text-redes-social"> bernad@elvajeff.com</span></i>
+                            </li>
+                                <li class="fs-4">
+                                    <i class="bi bi-telephone-inbound"> <span class="text-redes-social"> 352 54 47 61</span> </i>
+                                </li>
+                            </ul>
+                            </div>
+                            
+                        </div>
+                        <div class="row mt-4">
+                            <h3 class="section-title fs-4 text-colored">
+                                <i class="bi bi-cursor-fill"></i>
+                                Endereço
+                            </h3>
+                            <p class="adress-paragraph"> 101, Rue d'Esch, L-4380 Ehlerange, LUXEMBOURG</p>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        
+    </section>
+    <section  id="footer-section">
+        <footer>
+            <div class="container container-footer">
+                <ul class="container-flex">
+                    <li>
+                        <p>
+                    2023 &copy; New Elvajeff - Tous droits réservés
+                </p>
+                    </li>
+    
+                    <li>
+                        <p><i class="bi bi-telephone-inbound"> </i> 352 54 47 61</p>
+                    </li>
+
+                    <li>
+                        <p> <i class="bi bi-cursor-fill"> </i></i> 101, Rue d'Esch, L-4380 Ehlerange</p>
+                    </li>
+
+    
+                </ul>
+            </div>
+        </footer>
+    </section>
+</body>
+
+</html>

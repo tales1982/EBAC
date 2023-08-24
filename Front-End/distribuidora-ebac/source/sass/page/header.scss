@@ -1,0 +1,76 @@
+/*Header*/
+.container .text-colored,.bi{
+    color:$bg-section;
+    font-weight: bold;
+    font-size: 1.1em;
+ }
+ 
+ #menu-navegacao a{
+     color:$bg-text;
+     font-weight: bold;
+    
+ }
+ 
+ #cabecalho{
+     height: 100px;
+     background-color:$bg-header;
+ }
+ 
+ .text-header h3{
+     margin-left: 40px;
+     padding: 0px;
+     color:$bg-text;
+ }
+ 
+
+
+ @media screen and (min-width:768px) and (max-width: 1023px){
+
+    #menu-navegacao ul{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+     #menu-navegacao i{
+        color: $bg-text;
+        
+     }
+
+    #menu-navegacao a{
+        background-color:#D2D904;
+        color: $secondary-green;
+        margin: 3px;
+    }
+
+    .menu-hamburg{
+        background-color: #D2D904;
+    }
+
+ }
+
+ @media screen and (min-width:374px) and (max-width: 767px){
+
+        #menu-navegacao ul{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+        }
+    
+        #menu-navegacao i{
+            color: $bg-text;
+        }
+    
+        #menu-navegacao a{
+            background-color:#D2D904;
+            color: $secondary-green;
+            margin: 3px;
+        }
+
+        .menu-hamburg{
+            background-color: #D2D904;
+        }
+
+        
+    }
+    
