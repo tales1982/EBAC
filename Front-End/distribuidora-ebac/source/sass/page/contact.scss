@@ -126,10 +126,10 @@
         padding-top: 100px;
         padding-bottom: 100px;
         width: 100%;
+        
         }
 
-       .row .col-5,.row .col-7{
-          
+        .row .col-5,.row .col-7{
             padding-left: 30px;
             width:100vw;
             padding-bottom: 20px;
@@ -140,6 +140,10 @@
         margin-left: 0px;
         }
 
+        #rede-social .h3{
+            font-weight: bold;
+            color: #5ac794;
+        }
 
         .social-links li,.social-links a{
             padding: 0px;
@@ -148,7 +152,7 @@
         
         .text-redes-social{
             padding-left: 0px;
-            font-size: 16px;
+            font-size: 18px;
         }
         
         .contact-ul{
@@ -157,8 +161,13 @@
             align-items: center;
             justify-content: center;
             padding: 0px;
-        
         }
+
+        
+element.style {
+    margin-left: 0px;
+    margin-right: 0px;
+}
         
 }
 
