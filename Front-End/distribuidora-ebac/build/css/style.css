@@ -83,6 +83,10 @@ body {
   }
 }
 /*Header*/
+.logo-new {
+  height: 100px;
+}
+
 .container .text-colored, .bi {
   color: #F2E3B3;
   font-weight: bold;
