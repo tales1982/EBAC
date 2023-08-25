@@ -49,7 +49,7 @@
 
  }
 
- @media screen and (min-width:320px) and (max-width: 767px){
+ @media screen and (min-width:374px) and (max-width: 767px){
 
         #menu-navegacao ul{
             display: flex;
@@ -74,3 +74,26 @@
         
     }
     
+    @media screen and (max-width: 373px){
+
+        
+        #menu-navegacao ul{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+        }
+    
+        #menu-navegacao i{
+            color: $bg-text;
+        }
+    
+        #menu-navegacao a{
+            background-color:#D2D904;
+            color: $secondary-green;
+            margin: 3px;
+        }
+
+        .menu-hamburg{
+            background-color: #D2D904;
+        }
+    }

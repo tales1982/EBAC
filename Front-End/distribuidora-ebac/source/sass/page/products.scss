@@ -71,7 +71,7 @@
 
 }
 
-@media screen and (min-width:320px) and (max-width: 767px){
+@media screen and (min-width:373px) and (max-width: 767px){
     .icones img{
         width: 35px;
     }
@@ -89,7 +89,32 @@
         font-size: 16px;
     }
 
-.produtos-info{
+    .produtos-info{
     width: 50vw;
+    }
 }
+
+@media screen and (max-width: 373px){
+
+    .icones img{
+        width: 35px;
+    }
+    
+    .links-aba{
+    font-size: .7em;
+    }
+
+    .editar-linha{
+        display: grid;
+        grid-template-columns: repeat(2, 49%);
+    }
+
+    .editar-linha .col-3 .produtos-info h4{
+        font-size: 16px;
+    }
+
+    .produtos-info{
+    width: 50vw;
+    }
+    
 }

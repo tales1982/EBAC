@@ -47,7 +47,7 @@
     }
 }
 
-@media screen and (min-width:320px) and (max-width: 767px){
+@media screen and (min-width:374px) and (max-width: 767px){
     #footer-section{
         height: 150px;
     }
@@ -67,5 +67,28 @@
     .container-footer p{
         margin: 5px ;
         font-size: .9em;
+    }
+}
+
+@media screen and (max-width: 373px){
+    #footer-section{
+        height: 150px;
+    }
+    
+    .container-footer ul{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .container-footer li{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0px;
+    }
+
+    .container-footer p{
+        margin: 5px ;
+        font-size: .7em;
     }
 }
