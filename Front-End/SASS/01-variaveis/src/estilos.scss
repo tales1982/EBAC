@@ -24,6 +24,6 @@ body {
   transition: background-color 0.3s;
 
   &:hover {
-    background-color: darken($cor-primaria, 10%);
+    background-color: darken($cor-primaria, 12%);
   }
 }
