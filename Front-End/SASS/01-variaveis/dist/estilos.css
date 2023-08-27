@@ -1,0 +1,25 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #5fa0cc;
+  color: #e7d63c;
+}
+
+.header {
+  background-color: #e7d63c;
+  color: #5fa0cc;
+  padding: 20px;
+}
+
+.button {
+  background-color: #5fa0cc;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.button:hover {
+  background-color: #3c88bc;
+}
+
+/*# sourceMappingURL=estilos.css.map */
