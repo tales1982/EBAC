@@ -1,0 +1,1 @@
+function ಠ_ಠ24(){return a+b}console.log(ಠ_ಠ24(10,20));

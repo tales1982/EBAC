@@ -1,0 +1,1 @@
+{"version":3,"sources":["main.scss","variaveis.scss"],"names":[],"mappings":"AAEA,KACI,iBCHU","file":"../main.css","sourcesContent":["@import'variaveis.scss';\n\nbody{\n    background-color:$corPrincipal;\n}","$corPrincipal:rgb(129, 57, 9);\n$corSegunda:blue;"]}
