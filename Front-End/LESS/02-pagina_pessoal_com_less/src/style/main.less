@@ -1,0 +1,79 @@
+//importando minhas variaveis.
+@import "variaveis.less";
+
+// Escapings  -  breackPoint
+@breakpointMobile: ~"(max-width:767px)";//breack Point par celular
+@breakpointTablet: ~"(min-width: 768px) and (max-width:1023px)";//breack Point par tablete
+
+//Criando um Mixins, serve para codigos repetidos 
+.marginBottom8{
+    margin-bottom: 8px;
+}
+
+.fontSize14{
+    font-size: 14px;
+}
+
+
+
+//reset
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: @fontPrincipal;
+}
+
+body{
+    background-color: @corDeFundo;
+    color: @corDoTexto;
+}
+
+.container{
+    max-width: 960px;
+    width: 100%;
+    margin: 0 auto;
+    //Importante a orden do media query e importew sempre do maior pra menor exemplo 
+    // Para ao ficar me preocupando com a orden adciono uma condicao ao scape exemplo abaixo
+    //@breakpointTablet: ~"(min-width: 768px) and (max-width:1023px)"
+    //Obs Posso estilizar diretamento o tablete e celular dentro da mesma seletor
+    @media @breakpointTablet{
+        max-width: 80%;
+    }
+    @media @breakpointMobile{
+        max-width: 70%;
+    }
+}
+
+
+header{
+    padding: 24px;
+
+    .profile-avatar{
+        display: block;
+        margin: 0 auto 24px;
+        border-radius: 50%;
+    }
+}
+
+//quando o seletores tem o mesmo nome como no caso abaixo profile-bio --> profile-bio-name Posso substituir o profile-bio por &
+.profile-bio{
+
+    text-align: center;
+
+    &-name{
+        font-size: 16px;
+        .marginBottom8();
+    }
+
+    &-subtitle{
+        .fontSize14();
+        .marginBottom8();
+    }
+
+    &-description{
+        .fontSize14();
+        opacity: .7;
+
+    }
+}
