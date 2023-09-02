@@ -1,5 +1,6 @@
-//importando minhas variaveis.
-@import "variaveis.less";
+
+//Importando o mapeamento das cores
+@import "mapas.less";
 
 // Escapings  -  breackPoint
 @breakpointMobile: ~"(max-width:767px)";//breack Point par celular
@@ -15,28 +16,43 @@
 }
 
 
-
 //reset
 *{
     box-sizing: border-box;
     margin: 0px;
     padding: 0px;
-    font-family: @fontPrincipal;
+    font-family:'Roboto', sans-serif;
 }
 
 body{
-    background-color: @corDeFundo;
-    color: @corDoTexto;
+    background-color: #color[backgroundColor];
+    color: #color[textColor];
+    
+}
+
+li{
+    list-style: none;
 }
 
 .container{
     max-width: 960px;
     width: 100%;
     margin: 0 auto;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     //Importante a orden do media query e importew sempre do maior pra menor exemplo 
     // Para ao ficar me preocupando com a orden adciono uma condicao ao scape exemplo abaixo
     //@breakpointTablet: ~"(min-width: 768px) and (max-width:1023px)"
     //Obs Posso estilizar diretamento o tablete e celular dentro da mesma seletor
+
+    .profile-avatar{
+        height: 300px;
+    }
+
+
+
     @media @breakpointTablet{
         max-width: 80%;
     }
@@ -75,5 +91,56 @@ header{
         .fontSize14();
         opacity: .7;
 
+
+    }
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    .social-links{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    max-width: 400px;
+    width: 100%;
+    
+    li{
+        img{
+            transition: all ease .3s;
+            &:hover{
+                transform: scale(1.1);
+            }
+        }
+    }
+    
+}
+
+}
+
+.projects-list{
+    margin-top: 32px;
+    &-item{
+        a{
+            text-decoration: none;
+            background-color: #color[buttonColor];
+            display: block;
+            padding: 16px 20px;
+            margin-bottom: 16px;
+            text-align: center;
+            color: #color[textColor];
+            font-weight: bold;
+            border-radius: 30px;
+            border: 2px solid #color[buttonColor];
+           transition: all ease .5s;
+            width: 20vw;
+            &:hover{
+                color: #color[buttonColor];
+                background-color: transparent;
+            }
+        }
     }
 }

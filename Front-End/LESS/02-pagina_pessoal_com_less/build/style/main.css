@@ -12,12 +12,22 @@
 }
 body {
   background-color: #0652DD;
-  color: #ecf0f1;
+  color: #f9faf5;
+}
+li {
+  list-style: none;
 }
 .container {
   max-width: 960px;
   width: 100%;
   margin: 0 auto;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.container .profile-avatar {
+  height: 300px;
 }
 @media (min-width: 768px) and (max-width:1023px) {
   .container {
@@ -51,4 +61,44 @@ header .profile-avatar {
 .profile-bio-description {
   font-size: 14px;
   opacity: 0.7;
+}
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+nav .social-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 400px;
+  width: 100%;
+}
+nav .social-links li img {
+  transition: all ease 0.3s;
+}
+nav .social-links li img:hover {
+  transform: scale(1.1);
+}
+.projects-list {
+  margin-top: 32px;
+}
+.projects-list-item a {
+  text-decoration: none;
+  background-color: #6a89cc;
+  display: block;
+  padding: 16px 20px;
+  margin-bottom: 16px;
+  text-align: center;
+  color: #f9faf5;
+  font-weight: bold;
+  border-radius: 30px;
+  border: 2px solid #6a89cc;
+  transition: all ease 0.5s;
+  width: 20vw;
+}
+.projects-list-item a:hover {
+  color: #6a89cc;
+  background-color: transparent;
 }
