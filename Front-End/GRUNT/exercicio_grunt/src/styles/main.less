@@ -1,0 +1,85 @@
+@import "mapas.less";
+
+
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body,.container,.form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #color[corDeFundo];
+    color: #fff;
+    font-size: 1.2em;
+    font-family: @fontSecundaria;
+}
+
+.textoH1{
+    font-family: @fontCabecalho;
+}
+
+.container{
+    max-width: 900px;
+    width: 100%;
+    padding-top: 50px;
+}
+.form{
+    padding: 10px;
+    margin: 15px;
+
+    input{
+    margin: 20px;
+    font-size: 2em;
+    height: 50px;
+    width: 150px;
+    border-radius: 5px;
+}
+}
+
+
+#paragrafo{
+display: none;
+}
+
+button{
+    height: 50px;
+    width: 150px;
+    border-radius: 5px;
+    background-color: #color[CorDoButao];
+    font-weight: bold;
+    cursor: pointer;
+    &:hover{
+        transition: all;
+    }
+}
+
+
+// Escapings  -  breackPoint
+@breakpointMobile: ~"(max-width:767px)";//breack Point par celular
+@breakpointTablet: ~"(min-width: 768px) and (max-width:1023px)";//breack Point par tablete
+
+@media @breakpointTablet{
+  
+body,.container,.form{
+ 
+    background-color: green;
+    color: #fff;
+   
+}
+   
+}
+@media @breakpointMobile{
+    body,.container,.form{
+        font-size: 1em;
+        background-color: rgb(128, 0, 38);
+        color: #fff;
+       
+    }
+    
+}
+
+
