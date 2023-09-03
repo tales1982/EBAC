@@ -201,5 +201,24 @@ copie esse trecho do codigo do replace
                         }
 # cole ele no dist logo depois do (adress do css)
 # e altere ele para ficar assin
- 
- 
+ dist:{
+                options:{
+                    patterns:[
+                        {
+                            match: 'ADRESS_DO_CSS',
+                            replacement: './styles/main.min.css'
+                        },
+                        {
+                            match: 'ADRESS_DO_JS',
+                            replacement: '../dist/scripts/main.min.js'
+                        }
+                    ]
+                },files:[
+                    {
+                        expand:true,
+                        flatten:true,
+                        src:['prebuild/index.html'],
+                        dest:'dist/'
+                    }
+                ]
+            }
