@@ -1,67 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./smacss/base.css">
-    <link rel="stylesheet" href="smacss/layout.css">
-    <link rel="stylesheet" href="smacss/module.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./smacss/base.css" />
+    <link rel="stylesheet" href="smacss/layout.css" />
+    <link rel="stylesheet" href="smacss/module.css" />
     <title>Document</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <header>
-        <div class="container">
-            <h1 class="title">Nome do Site</h1>
-            <nav>
-                <ul>
-                    <li>
-                        <a href="#">HOME</a>
-                    </li>
-                    <li>
-                        <a href="#">PRODUTO</a>
-                    </li>
-                    <li>
-                        <a href="#">CONTATO</a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
+      <div class="container">
+        <h1 class="title">Nome do Site</h1>
+        <nav>
+          <ul>
+            <li>
+              <a href="#">HOME</a>
+            </li>
+            <li>
+              <a href="#">PRODUTO</a>
+            </li>
+            <li>
+              <a href="#">CONTATO</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
     <div class="container">
-        <div class="accordion">
-            <header class="accordion-header">
-                Nome do accordion
-            </header>
-            <p class="accordion-content">
-                Conteudo
-            </p>
-        </div>
+      <div class="accordion">
+        <header class="accordion-header">Nome do accordion</header>
+        <p class="accordion-content">Conteudo</p>
+      </div>
     </div>
     <footer>
-        <div class="container">
-            <div class="mensagem mensagem-is-error">
-                <h5 class="mensagem-titulo">Atecao</h5>
-                <p class="mensagem-conteudo">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius fugit dicta,
-                    maiores eligendi fugiat assumenda unde ex impedit tempora odit.</p>
-            </div>
+      <div class="container">
+        <div class="mensagem mensagem-is-error">
+          <h5 class="mensagem-titulo">Atecao</h5>
+          <p class="mensagem-conteudo">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius fugit
+            dicta, maiores eligendi fugiat assumenda unde ex impedit tempora
+            odit.
+          </p>
         </div>
+      </div>
     </footer>
     <script>
-        // const acordions = document.querySelectorAll(".acordion-header");
-        // acordions.forEach(function(acordion) {
-        //     acordion.addEventListener("click", function(evento) {
-        //         evento.target.parentNode.classList.toggle("is-open")
-        //     });
-        // });
-        const acordions2 = document.querySelectorAll(".acordion");
-        acordions2.forEach(function(acordion) {
-            acordion.addEventListener("click", function() {
-                acordion.classList.toggle("is-open")
-            });
-        });
-    </script>
-</body>
+               const acordions = document.querySelectorAll(".accordion-header");
+               for(let i = 0; i < acordions.length; i ++){
+                   acordions[i].addEventListener("click", function(evento) {
+                    evento.target.parentNode.classList.toggle("is-open")
+                      // if(evento.target.parentNode.classList.contains("is-open")){
+                      //    evento.target.parentNode.classList.remove("is-open")
+                      // }else{
+                      //   evento.target.parentNode.classList.add("is-open")
+                      // }
 
+                   });
+               }
+    </script>
+  </body>
 </html>
