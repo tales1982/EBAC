@@ -1,0 +1,29 @@
+.hero{
+    display: flex;
+background-color: #000;
+
+    &__image{
+       width: 40%;
+
+    }
+
+    &__info{
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+
+        &__item{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            img{
+                top: 1vh;
+                max-width: 35vw;
+                margin: 0 auto;
+                
+                
+            }
+        }
+    }
+}
