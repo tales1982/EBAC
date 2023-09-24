@@ -1,31 +1,128 @@
+
 .hero {
-  display: flex;
+display: flex;
+background-color: black;
 
 
   &__image {
+    width: 50vw;
     margin-top: -85px;
-    width: 46%;
+  }
+
+&__share{
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  position: relative;
+
+  .hidden {
+    max-height: 0px; 
+    overflow: hidden;
+    transition: max-height 0.5s ease; 
+  }
+  .hidden.fechado{
+    max-height: 0px;
+  }
+  .hidden.aberto {
+    max-height: 100px; /* Definir a altura máxima desejada para a div aberta */
+  } 
+  
+  &__dropdown{
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+    &__togle{
+      display: flex;
+      flex-direction: row-reverse;
+     
+
+      &--hamburg{
+        &--item{
+          border: 2px solid #fff;
+          margin: 4px 10px 05px 0px;
+          width: 35px;
+          border-radius: 5px;
+        }
+      }
+    }
+
+    
+
+    &--content{
+      display: none;
+      margin: -15px -70px ;
+      width: 160px;
+      height: 100px;
+      border-radius: 10px;
+      font-size: 18px;
+      display: flex;
+      flex-direction: column;
+      cursor: pointer;
+      background-color: #f3f3f3;
+
+      &--item1{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 10px 10px 20px 10px;
+      }
+
+      &--item2{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0 20px 0 15px;
+
+        img{
+          height: 20px;
+          
+        }
+      }
+
+    }
+
+    button{
+      background-color: #000;
+      color: white;
+      padding: 20px;
+      border: none;
+      cursor: pointer;
+
+    }
+    img{
+      height: 20px;
+  
+    }
+
+  }
   }
 
   &__subtitle {
     display: flex;
     flex-direction: column;
-    max-width: 54%;
-    width: 100%;
-    height: auto;
-    background-color: black;
+    width: 45vw;
+    
 
     &__info {
         display: flex;
         flex-direction:column;
         align-items: center;
         justify-content: center;
+        width: 100%;
+
+        
 
         &--top{
-           margin:20px 0 20px 0;
-             img {
+          display: flex;
+          flex-direction: row;
+          margin:20px 0 20px 0;
+          
+            
+          img {
           max-width: 35vw;
           margin: 0 auto;
+          
         }
         }
 
@@ -47,9 +144,229 @@
             margin: 3vh auto;
             img{
                 max-width: 26vh;
+                
             }
         }
-       
+
+        &--icon{        
+          &--ul{
+            display: flex;
+            list-style: none;
+            
+            li{
+              margin: 0 8px;
+              cursor: pointer;
+            }
+            li:last-child img {
+              /* Propriedades de estilo para alterar o tamanho */
+              width: 38px; /* Defina a largura desejada */
+              height: 38px; /* Defina a altura desejada */
+              padding-bottom: 8px;
+          }
+            img{
+              width: 26px;
+            }
+          }
+            
+   
+        }
+
+        &--font{
+        padding-top: 4px;
+        padding-bottom: 8px;
+          button{
+            height: 45px;
+            width: 230px;
+            background-color: rgb(206, 212, 175);
+            font-size: 18px;
+            text-transform: uppercase;
+            border-radius: 25px;
+            border: none;
+          }
+          
+        }
     }
   }
+
+.divHamburg__hidden{
+      display: block;
+      color: #f3f3f3;
+      position: absolute; /* Usar "absolute" ou "fixed" em vez de "relative" para posicionamento */
+      top: 0; /* Ajustar conforme necessário para a posição vertical desejada */
+      right: 0; /* Define a div à direita */
+      width: 362px;
+      height: 900px;
+      background-color: #121111;
+
+      &__close_hamburg{
+        text-align: right;
+        padding: 14px;   
+        span{
+          font-weight: bold;
+          font-family: 'Courier New', Courier, monospace;
+          font-size: 26px;
+        }
+      }
+
+      &__ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        list-style: none;
+        margin-top: 80px;
+
+        &--item{
+          margin-top: 30px;
+        }
+
+      }
+
+      &__social{
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: center;
+          padding-top: 5px;
+        &__ul{
+          display: flex;
+          flex-direction:row ;
+          justify-content: center;
+          align-items: center;
+          list-style: none;
+          margin-top: 20px;
+          max-width:300px;
+          width: 100%;
+          height: 50px;
+          
+        
+        &--items{
+          margin: 0 5px 0 5px;
+          img{
+            height: 40px;
+          }
+        }
+      }
+
+        
+      }
+
+
+    }
+
+
 }
+
+/*===========ANIMATED CLASSES ENDS HERE================*/
+/*=== Scroll Indicator Animation Ends ===*/
+.scrollIndicator {
+  display: block;
+  width: 100%;
+  align-self: flex-end;
+  width: 70%;
+}
+.scrollIndicator .mouse_scroll {
+  display: block;
+  margin: 0 auto;
+  width: 40px;
+  height: 40px;
+  border-radius: 40px;
+  /* border: 1px solid #ffffff; */
+  -webkit-animation: bounce 2s infinite 1.3s;
+  animation: bounce 2s infinite 1.3s;
+  cursor: pointer;
+}
+.m_scroll_arrow1, .m_scroll_arrow2, .m_scroll_arrow3 {
+  display: block;
+  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  border-right: 2px solid #FFFFFF;
+  border-bottom: 2px solid #FFFFFF;
+  margin: 0 auto;
+}
+.m_scroll_arrow1 {
+  margin-top: 5px;
+  width: 8px;
+  height: 8px;
+}
+.m_scroll_arrow2 {
+  margin-top: -2px;
+  width: 10px;
+  height: 10px;
+}
+.m_scroll_arrow3 {
+  margin-top: -4px;
+  width: 12px;
+  height: 12px;
+}
+.m_scroll_arrow1, .m_scroll_arrow2, .m_scroll_arrow3 {
+  -webkit-animation: mouse-scroll 1s infinite;
+  -moz-animation: mouse-scroll 1s infinite;
+  animation: mouse-scroll 1s infinite;
+}
+.m_scroll_arrow1 {
+  -webkit-animation-delay: 1.1s;
+  -moz-animation-delay: 1.1s;
+  -webkit-animation-direction: alternate;
+  animation-direction: alternate;
+  animation-delay: alternate;
+}
+.m_scroll_arrow2 {
+  -webkit-animation-delay: 1.2s;
+  -moz-animation-delay: 1.2s;
+  -webkit-animation-direction: alternate;
+  animation-delay: 1.2s;
+  animation-direction: alternate;
+}
+.m_scroll_arrow3 {
+  -webkit-animation-delay: 1.3s;
+  -moz-animation-delay: 1.3s;
+  -webkit-animation-direction: alternate;
+  animation-delay: 1.3s;
+  animation-direction: alternate;
+}
+@-webkit-keyframes mouse-scroll {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes mouse-scroll {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-20px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-10px);
+  }
+  60% {
+    transform: translateY(-5px);
+  }
+}
+/*=== Scroll Indicator Animation Ends ===*/
