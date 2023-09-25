@@ -1,3 +1,23 @@
+@mixin flex-colum{
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin flex-row{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin flex-row-between{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+
+
 
 .hero {
 display: flex;
@@ -10,8 +30,7 @@ background-color: black;
   }
 
 &__share{
-  display: flex;
-  flex-direction: column;
+  @include flex-colum();
   max-width: 100%;
   position: relative;
 
@@ -28,10 +47,7 @@ background-color: black;
   } 
   
   &__dropdown{
-   display: flex;
-   flex-direction: row;
-   justify-content: center;
-   align-items: center;
+   @include flex-row();
     &__togle{
       display: flex;
       flex-direction: row-reverse;
@@ -51,27 +67,23 @@ background-color: black;
 
     &--content{
       display: none;
+      @include flex-colum();
       margin: -15px -70px ;
       width: 160px;
       height: 100px;
       border-radius: 10px;
       font-size: 18px;
-      display: flex;
-      flex-direction: column;
+     
       cursor: pointer;
       background-color: #f3f3f3;
 
       &--item1{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
+        @include flex-row-between();
         padding: 10px 10px 20px 10px;
       }
 
       &--item2{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
+        @include flex-row-between();
         padding: 0 20px 0 15px;
 
         img{
@@ -99,14 +111,12 @@ background-color: black;
   }
 
   &__subtitle {
-    display: flex;
-    flex-direction: column;
+    @include flex-colum();
     width: 45vw;
     
 
     &__info {
-        display: flex;
-        flex-direction:column;
+      @include flex-colum();
         align-items: center;
         justify-content: center;
         width: 100%;
@@ -127,9 +137,7 @@ background-color: black;
         }
 
         &--centre{
-            display: flex;
-            flex-direction: row;
-            align-items: center;
+            @include flex-row();
             padding-top: 50px;
             img{
                 max-width: 45vh;
@@ -138,9 +146,7 @@ background-color: black;
         }
 
         &--button{
-            display: flex;
-            flex-direction: row;
-            align-items: center;
+          @include flex-row();
             margin: 3vh auto;
             img{
                 max-width: 26vh;
@@ -189,31 +195,31 @@ background-color: black;
   }
 
 .divHamburg__hidden{
-      display: block;
+      display: none;
       color: #f3f3f3;
       position: absolute; /* Usar "absolute" ou "fixed" em vez de "relative" para posicionamento */
-      top: 0; /* Ajustar conforme necessário para a posição vertical desejada */
+      top: 0; /* Ajustar posição vertical desejada */
       right: 0; /* Define a div à direita */
       width: 362px;
       height: 900px;
       background-color: #121111;
 
-      &__close_hamburg{
-        text-align: right;
-        padding: 14px;   
-        span{
+        &__close_hamburg{
+          text-align: right;
+          padding: 14px;   
+          
+          span{
           font-weight: bold;
           font-family: 'Courier New', Courier, monospace;
           font-size: 26px;
         }
       }
 
-      &__ul{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        list-style: none;
-        margin-top: 80px;
+        &__ul{
+          @include flex-colum();
+          align-items: center;
+          list-style: none;
+          margin-top: 80px;
 
         &--item{
           margin-top: 30px;
@@ -221,17 +227,11 @@ background-color: black;
 
       }
 
-      &__social{
-          display: flex;
-          flex-direction: row;
-          align-items: center;
-          justify-content: center;
+        &__social{
+          @include flex-row();
           padding-top: 5px;
         &__ul{
-          display: flex;
-          flex-direction:row ;
-          justify-content: center;
-          align-items: center;
+          @include flex-row();
           list-style: none;
           margin-top: 20px;
           max-width:300px;
@@ -241,9 +241,9 @@ background-color: black;
         
         &--items{
           margin: 0 5px 0 5px;
-          img{
+            img{
             height: 40px;
-          }
+            }
         }
       }
 
@@ -252,8 +252,9 @@ background-color: black;
 
 
     }
-
-
+    #closeAside, #menuHamburg{
+      cursor: pointer;
+    }
 }
 
 /*===========ANIMATED CLASSES ENDS HERE================*/
@@ -369,4 +370,22 @@ background-color: black;
     transform: translateY(-5px);
   }
 }
+
+
+@keyframes expandirDiv {
+  0% {
+    width: 0; /* Largura inicial como 0 */
+  }
+  100% {
+    width: 360px; /* Largura final, ajuste conforme necessário */
+  }
+}
+
+.hidden2 {
+  width: 0; /* Defina a largura inicial como 0 */
+  overflow: hidden; /* Ocultar conteúdo que pode transbordar */
+  animation: expandirDiv .5s ease; /* Use a animação expandirDiv com duração de 0.5 segundos */
+}
+
+
 /*=== Scroll Indicator Animation Ends ===*/
