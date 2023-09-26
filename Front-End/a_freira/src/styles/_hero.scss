@@ -1,391 +1,122 @@
-@mixin flex-colum{
-  display: flex;
-  flex-direction: column;
-}
-
 @mixin flex-row{
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
+    display: flex;
+    flex-direction: row;
 }
 
-@mixin flex-row-between{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+@mixin flex-col{
+    display: flex;
+    flex-direction: column;
 }
 
 
 
+.hero{
+    @include flex-row();
+    background-color: #000;
+    justify-content: space-between;
+   max-width:100vw;
+   width: 100%;
 
-.hero {
-display: flex;
-background-color: black;
-
-
-  &__image {
-    width: 50vw;
-    margin-top: -85px;
-  }
-
-&__share{
-  @include flex-colum();
-  max-width: 100%;
-  position: relative;
-
-  .hidden {
-    max-height: 0px; 
-    overflow: hidden;
-    transition: max-height 0.5s ease; 
-  }
-  .hidden.fechado{
-    max-height: 0px;
-  }
-  .hidden.aberto {
-    max-height: 100px; /* Definir a altura máxima desejada para a div aberta */
-  } 
-  
-  &__dropdown{
-   @include flex-row();
-    &__togle{
-      display: flex;
-      flex-direction: row-reverse;
-     
-
-      &--hamburg{
-        &--item{
-          border: 2px solid #fff;
-          margin: 4px 10px 05px 0px;
-          width: 35px;
-          border-radius: 5px;
-        }
-      }
-    }
-
-    
-
-    &--content{
-      display: none;
-      @include flex-colum();
-      margin: -15px -70px ;
-      width: 160px;
-      height: 100px;
-      border-radius: 10px;
-      font-size: 18px;
-     
-      cursor: pointer;
-      background-color: #f3f3f3;
-
-      &--item1{
-        @include flex-row-between();
-        padding: 10px 10px 20px 10px;
-      }
-
-      &--item2{
-        @include flex-row-between();
-        padding: 0 20px 0 15px;
-
+    &__bg{
         img{
-          height: 20px;
-          
+            margin-top: -80px
         }
-      }
-
     }
 
-    button{
-      background-color: #000;
-      color: white;
-      padding: 20px;
-      border: none;
-      cursor: pointer;
-
-    }
-    img{
-      height: 20px;
-  
-    }
-
-  }
-  }
-
-  &__subtitle {
-    @include flex-colum();
-    width: 45vw;
-    
-
-    &__info {
-      @include flex-colum();
-        align-items: center;
-        justify-content: center;
-        width: 100%;
-
+    &__home{
+        @include flex-row();
+        justify-content: space-between;
+        background-color: #000;
         
-
-        &--top{
-          display: flex;
-          flex-direction: row;
-          margin:20px 0 20px 0;
-          
-            
-          img {
-          max-width: 35vw;
-          margin: 0 auto;
-          
-        }
-        }
-
-        &--centre{
-            @include flex-row();
-            padding-top: 50px;
+        &-img{
             img{
-                max-width: 45vh;
-                width: 100%;
-            }
-        }
-
-        &--button{
-          @include flex-row();
-            margin: 3vh auto;
-            img{
-                max-width: 26vh;
                 
-            }
+                width: 35vw;
+            }         
         }
 
-        &--icon{        
-          &--ul{
-            display: flex;
+        &__nav{
+        @include flex-col();
+        align-items: end;
+            &--item{
+                @include flex-row();
+                width: 100px;
+                position: fixed;
+                
+                button{
+                cursor: pointer;
+                margin-right: 5px;
+                width: 50px;
+                height: 30px;
+                background-color: #00000000;
+                border: none;
+                img{
+                    width: 22px;
+                }
+                }
+            
+            }
+        }
+    }
+
+    &__hamburguer{
+        margin-top: 0px;
+        height: 970px;
+        width: 260px;
+        background-color: #121111;
+        
+    }
+
+    //Construcao do btn Hamburg
+    .divBtnHanburg{
+        border: 2px solid white;
+        margin: 4px;
+        width: 32px;
+        border-radius: 5px;
+        
+    }
+
+    //div itens Share
+    .hero__share{
+        
+        width: 160px;
+        height: 100px;
+        background-color: #f3f3f3;
+        margin-right: 2px;
+        border-radius: 15px;
+        max-height: 0;/* Inicialmente oculto */
+        overflow: hidden;/* Oculta o conteúdo que excede a altura máxima */
+        transition: max-height 1s ease; /* Transição suave para max-height */
+        
+        &--p{
+            @include flex-row();
+            justify-content: space-between;
+            margin: 15px;
+        }
+
+        &--ul{
+            @include flex-row();
             list-style: none;
-            
-            li{
-              margin: 0 8px;
-              cursor: pointer;
-            }
-            li:last-child img {
-              /* Propriedades de estilo para alterar o tamanho */
-              width: 38px; /* Defina a largura desejada */
-              height: 38px; /* Defina a altura desejada */
-              padding-bottom: 8px;
-          }
-            img{
-              width: 26px;
-            }
-          }
-            
-   
-        }
+            justify-content: space-between;
+            margin: 30px 30px 10px 15px;
 
-        &--font{
-        padding-top: 4px;
-        padding-bottom: 8px;
-          button{
-            height: 45px;
-            width: 230px;
-            background-color: rgb(206, 212, 175);
-            font-size: 18px;
-            text-transform: uppercase;
-            border-radius: 25px;
-            border: none;
-          }
-          
-        }
-    }
-  }
+            &-li{
+                cursor: pointer;
+                margin-right: 3px;
 
-.divHamburg__hidden{
-      display: none;
-      color: #f3f3f3;
-      position: absolute; /* Usar "absolute" ou "fixed" em vez de "relative" para posicionamento */
-      top: 0; /* Ajustar posição vertical desejada */
-      right: 0; /* Define a div à direita */
-      width: 362px;
-      height: 900px;
-      background-color: #121111;
-
-        &__close_hamburg{
-          text-align: right;
-          padding: 14px;   
-          
-          span{
-          font-weight: bold;
-          font-family: 'Courier New', Courier, monospace;
-          font-size: 26px;
-        }
-      }
-
-        &__ul{
-          @include flex-colum();
-          align-items: center;
-          list-style: none;
-          margin-top: 80px;
-
-        &--item{
-          margin-top: 30px;
-        }
-
-      }
-
-        &__social{
-          @include flex-row();
-          padding-top: 5px;
-        &__ul{
-          @include flex-row();
-          list-style: none;
-          margin-top: 20px;
-          max-width:300px;
-          width: 100%;
-          height: 50px;
-          
-        
-        &--items{
-          margin: 0 5px 0 5px;
-            img{
-            height: 40px;
+                img{
+                    width: 20px;
+                }
             }
         }
-      }
-
-        
-      }
-
-
     }
-    #closeAside, #menuHamburg{
-      cursor: pointer;
+
+    //Eveito no butao Shahe 
+    .btnShareVisivel{
+       max-height: 0px; /* Desloca o menu para dentro da tela */
     }
-}
 
-/*===========ANIMATED CLASSES ENDS HERE================*/
-/*=== Scroll Indicator Animation Ends ===*/
-.scrollIndicator {
-  display: block;
-  width: 100%;
-  align-self: flex-end;
-  width: 70%;
+    #closeShare{
+        max-height: 100px;
+        cursor: pointer;}
 }
-.scrollIndicator .mouse_scroll {
-  display: block;
-  margin: 0 auto;
-  width: 40px;
-  height: 40px;
-  border-radius: 40px;
-  /* border: 1px solid #ffffff; */
-  -webkit-animation: bounce 2s infinite 1.3s;
-  animation: bounce 2s infinite 1.3s;
-  cursor: pointer;
-}
-.m_scroll_arrow1, .m_scroll_arrow2, .m_scroll_arrow3 {
-  display: block;
-  -ms-transform: rotate(45deg);
-  -webkit-transform: rotate(45deg);
-  transform: rotate(45deg);
-  border-right: 2px solid #FFFFFF;
-  border-bottom: 2px solid #FFFFFF;
-  margin: 0 auto;
-}
-.m_scroll_arrow1 {
-  margin-top: 5px;
-  width: 8px;
-  height: 8px;
-}
-.m_scroll_arrow2 {
-  margin-top: -2px;
-  width: 10px;
-  height: 10px;
-}
-.m_scroll_arrow3 {
-  margin-top: -4px;
-  width: 12px;
-  height: 12px;
-}
-.m_scroll_arrow1, .m_scroll_arrow2, .m_scroll_arrow3 {
-  -webkit-animation: mouse-scroll 1s infinite;
-  -moz-animation: mouse-scroll 1s infinite;
-  animation: mouse-scroll 1s infinite;
-}
-.m_scroll_arrow1 {
-  -webkit-animation-delay: 1.1s;
-  -moz-animation-delay: 1.1s;
-  -webkit-animation-direction: alternate;
-  animation-direction: alternate;
-  animation-delay: alternate;
-}
-.m_scroll_arrow2 {
-  -webkit-animation-delay: 1.2s;
-  -moz-animation-delay: 1.2s;
-  -webkit-animation-direction: alternate;
-  animation-delay: 1.2s;
-  animation-direction: alternate;
-}
-.m_scroll_arrow3 {
-  -webkit-animation-delay: 1.3s;
-  -moz-animation-delay: 1.3s;
-  -webkit-animation-direction: alternate;
-  animation-delay: 1.3s;
-  animation-direction: alternate;
-}
-@-webkit-keyframes mouse-scroll {
-  0% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 0.5;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-@keyframes mouse-scroll {
-  0% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 0.5;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-@-webkit-keyframes bounce {
-  0%, 20%, 50%, 80%, 100% {
-    transform: translateY(0);
-  }
-  40% {
-    transform: translateY(-20px);
-  }
-  60% {
-    transform: translateY(-15px);
-  }
-}
-@keyframes bounce {
-  0%, 20%, 50%, 80%, 100% {
-    transform: translateY(0);
-  }
-  40% {
-    transform: translateY(-10px);
-  }
-  60% {
-    transform: translateY(-5px);
-  }
-}
-
-
-@keyframes expandirDiv {
-  0% {
-    width: 0; /* Largura inicial como 0 */
-  }
-  100% {
-    width: 360px; /* Largura final, ajuste conforme necessário */
-  }
-}
-
-.hidden2 {
-  width: 0; /* Defina a largura inicial como 0 */
-  overflow: hidden; /* Ocultar conteúdo que pode transbordar */
-  animation: expandirDiv .5s ease; /* Use a animação expandirDiv com duração de 0.5 segundos */
-}
-
-
-/*=== Scroll Indicator Animation Ends ===*/

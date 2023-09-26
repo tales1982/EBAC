@@ -1,33 +1,24 @@
-// Costante Share
-const dropDown = document.querySelector('.btn_hidden');
-const linkShare = document.querySelector('.hidden');
-let isHidden = true; // Variável para rastrear o estado atual
+// Div Share Start
+const btnShare = document.querySelector('#Btn-share');
+const closeShareX = document.querySelector('#closeShare');
+const divShare = document.querySelector('.hero__share'); // Seleciona a div Share
 
-//constant hamburg
-const  btnHamburguer = document.querySelector('#menuHamburg');
-const aside = document.querySelector('.divHamburg__hidden')
-const closeAside = document.querySelector('#closeAside');
+// Inicialmente, esconda a div Share definindo a max-height como 0
+divShare.style.maxHeight = '0px';
 
-
-//Evento Share
-dropDown.addEventListener('click', function () {
-  if (isHidden) {
-    // Adicionar a classe 'hiden.fechado' quando estiver fechado
-    linkShare.classList.add('hiden.fechado');
-    linkShare.classList.toggle('fechado');
-  } else {
-    // Remover a classe 'hiden.fechado' quando estiver aberto
-    linkShare.classList.remove('hiden.fechado');
-    linkShare.classList.toggle('aberto');
-  }
-  isHidden = !isHidden; // Inverter o estado atual
+btnShare.addEventListener('click', function () {
+    // Quando o botão for clicado, verifique se a div Share está visível
+    if (divShare.style.maxHeight === '0px') {
+        // Se estiver invisível, mostre-a definindo a max-height como um valor maior
+        divShare.style.maxHeight = '100px';
+    } else {
+        // Caso contrário, esconda-a definindo a max-height como 0 novamente
+        divShare.style.maxHeight = '0px';
+    }
 });
 
-//Evento Hamburg
-btnHamburguer.addEventListener('click',function(){
-  aside.style.display = 'block';
-})
-
-closeAside.addEventListener('click',function(){
-  aside.style.display = 'none';
-})
+closeShareX.addEventListener('click', function () {
+    // Quando o botão X for clicado, esconda a div Share definindo a max-height como 0
+    divShare.style.maxHeight = '0px';
+});
+// Div Share End
