@@ -30,7 +30,8 @@
         
         &-img{
             img{
-                
+                margin-right: 100px;
+                margin-top: 20px;
                 width: 35vw;
             }         
         }
@@ -39,6 +40,7 @@
         @include flex-col();
         align-items: end;
             &--item{
+                margin-top: 30px;
                 @include flex-row();
                 width: 100px;
                 position: fixed;
@@ -51,7 +53,7 @@
                 background-color: #00000000;
                 border: none;
                 img{
-                    width: 22px;
+                    width: 18px;
                 }
                 }
             
@@ -60,35 +62,92 @@
     }
 
     &__hamburguer{
+        position: fixed;
         margin-top: 0px;
-        height: 970px;
-        width: 260px;
+        height:100%;
+        width: 280px;
         background-color: #121111;
         max-width: 0;/* Inicialmente oculto */
         overflow: hidden;/* Oculta o conteúdo que excede a altura máxima */
-        transition: max-height 1s ease; /* Transição suave para max-height */
+        transition: max-width 1s ease; /* Transição suave para max-height */
+
+       
+        &__closeHamburg{
+            cursor: pointer;
+            font-family: 'Lucida Sans', sans-serif;
+            font-weight: bold;
+            display: block;
+            font-size: 2em ;
+            text-align: end;
+            margin: 15px;
+            color: white;
+           
+
+        }
+        &__nav{
+            margin-top: 100px;
+            
+
+            &__ul{
+
+                &--li{
+                    cursor: pointer;
+                    text-align: center;
+                    padding: 15px 20px;
+                    height: 50px;
+                    color: #f3f3f3;
+                    a{
+                        text-decoration: none;
+                        color: #f3f3f3;
+                        
+                    }
+                    &:hover , a:hover{
+                        background-color: #ced4af;
+                        color: #000;
+                    }
+                    
+
+                }
+
+            &--subLi{ 
+
+                    &--li_Icon{
+                        @include flex-row();
+                        justify-content: center;
+                        
+                        img{
+                            margin: 10px 5px;
+                            height: 30px;
+                            }
+                        
+                    }
+                }
+
+            }
+        } 
     }
 
     .btnHamburguerVisivel{
-        max-width: 300px;
+        max-width: 280px;
     }
 
     //Construcao do btn Hamburg
     .divBtnHanburg{
         border: 2px solid white;
-        margin: 4px;
-        width: 32px;
+        margin: 3px;
+        width: 30px;
         border-radius: 5px;   
     }
 
     //-----div itens Share-----
     .hero__share{
-        
+        position: fixed;
         width: 160px;
-        height: 100px;
+        height: auto;
         background-color: #f3f3f3;
         margin-right: 2px;
         border-radius: 15px;
+        top: 60px;
         max-height: 0;/* Inicialmente oculto */
         overflow: hidden;/* Oculta o conteúdo que excede a altura máxima */
         transition: max-height 1s ease; /* Transição suave para max-height */

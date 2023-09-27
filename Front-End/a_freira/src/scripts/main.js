@@ -26,6 +26,7 @@ closeShareX.addEventListener('click', function () {
 //=== Div Hamburguer start ===
 const btn_hamburg = document.querySelector("#btn-hamburg");
 let divHamburg = document.querySelector(".btnHamburguerVisivel");
+const closeDivHamburg = document.querySelector('#closeDivHamburg');
 divHamburg.style.maxWidth = '0px'
 
 
@@ -33,8 +34,18 @@ btn_hamburg.addEventListener('click',function(){
     
 if(divHamburg.style.maxWidth == '0px'){
     divHamburg.style.maxWidth = '300px'
+    
+
 }else{
-    divHamburg.style.maxWidth = '0px'
+
+    divHamburg.style.maxWidth = '0px';
+    
 }
 
 })
+
+
+closeDivHamburg .addEventListener('click', function () {
+
+    divHamburg.style.maxWidth = '0px';
+});
