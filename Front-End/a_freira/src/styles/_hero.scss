@@ -64,7 +64,13 @@
         height: 970px;
         width: 260px;
         background-color: #121111;
-        
+        max-width: 0;/* Inicialmente oculto */
+        overflow: hidden;/* Oculta o conteúdo que excede a altura máxima */
+        transition: max-height 1s ease; /* Transição suave para max-height */
+    }
+
+    .btnHamburguerVisivel{
+        max-width: 300px;
     }
 
     //Construcao do btn Hamburg
@@ -72,11 +78,10 @@
         border: 2px solid white;
         margin: 4px;
         width: 32px;
-        border-radius: 5px;
-        
+        border-radius: 5px;   
     }
 
-    //div itens Share
+    //-----div itens Share-----
     .hero__share{
         
         width: 160px;
