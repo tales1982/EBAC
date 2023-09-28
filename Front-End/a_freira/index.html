@@ -9,7 +9,7 @@
   </head>
 
   <body>
-    <section class="hero">
+    <section class="hero" id="home">
       <div class="hero__bg">
         <img src="dist/images/bg-freira.png" alt="The nun" />
       </div>
@@ -61,7 +61,7 @@
             </ul>
           </div>
           <div class="hero__home-img--img5">
-            <p class="paragrafo">WATCH TRAILER</p>
+            <p class="paragrafo"><a href="#clipYoutube">WATCH TRAILER</a></p>
             <div id="arrow">
               <span class="m_scroll_arrow1"></span>
               <span class="m_scroll_arrow2"></span>
@@ -124,13 +124,13 @@
             <nav class="hero__hamburguer__nav">
               <ul class="hero__hamburguer__nav__ul">
                 <li class="hero__hamburguer__nav__ul--li">
-                  <a href="#">HOME</a>
+                  <a href="#home">HOME</a>
                 </li>
                 <li class="hero__hamburguer__nav__ul--li">
-                  <a href="#">VIDEO</a>
+                  <a href="#clipYoutube">VIDEO</a>
                 </li>
                 <li class="hero__hamburguer__nav__ul--li">
-                  <a href="#">SYNOPSIS</a>
+                  <a href="#text">SYNOPSIS</a>
                 </li>
                 <li class="hero__hamburguer__nav__ul--li">#TheNunII</li>
                 <li class="hero__hamburguer__nav__ul--subLi">
@@ -168,7 +168,7 @@
         </div>
       </div>
     </section>
-    <section class="div_youtube">
+    <section class="div_youtube" id="clipYoutube">
         <h2>VIDEO</h2>
         <div class="div_youtube--iframe">
           <iframe
@@ -185,7 +185,7 @@
           </iframe>
         </div>
     </section>
-    <section class="cast_crew_wrapper">
+    <section class="cast_crew_wrapper" id="text">
       <div class="cast_crew_wrapper__img">
         <img src="dist/images/tt_small.png" alt="" />
       </div>
@@ -257,15 +257,21 @@
       </div>
     </section>
     <footer class="footer">
+      <div class="footer__credits invisible_credits">
+        <img src="dist/images/billingblock.png" alt="">
+      </div>
       <div class="footer__paragraphe1">
         <p>privacy policy</p>
         <p>terms of use</p>
         <p>gerenciar preferencias</p>
-        <p>credits</p>
+        <p >credits </p>
+        <p class="footer__paragraphe1--last" id="arrow-up"><img src="dist/images/The_Nun_icons/white-up-arrow-png-511098.png" alt="white up arrow"></p>
       </div>
       <div class="footer__paragraphe2">
         <p>© 2023 WARNER BROS. ENT. ALL RIGHTS RESERVED.</p>
+        <p>Website cloned for Study purposes, cloned by <a style="font-family: Arial, Helvetica, sans-serif; color: red; text-decoration: none;"href="https://www.linkedin.com/in/tales-lima-de-paula-900097242/"target="_blank">TALES LIMA</a></p>
       </div>
+      
     </footer>
   </body>
 </html>

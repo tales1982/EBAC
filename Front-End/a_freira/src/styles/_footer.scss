@@ -11,16 +11,45 @@
     width: 100%;
     text-align: center;
     
-
     &__paragraphe1{
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: center;
         list-style: none;
-        padding-bottom: 3px;
         p{
-            margin: 3px 5px;
+            margin: 2px 5px;
+        }
+
+        &--last{
+
+          img{
+            background-color: #000000;
+            width: 20px;
+            border-radius: 50px;
+            cursor: pointer;
+          }
+        }
+    }
+
+    &__paragraphe2{
+
+        p{
+              padding-top: 2px;
+        }
+      
+    }
+
+    &__credits{
+        max-height: 0;/* Inicialmente oculto */
+        overflow: hidden;/* Oculta o conteúdo que excede a altura máxima */
+        transition: max-height 1s ease; /* Transição suave para max-height */
+        
+
+      
+        img{
+           
+            padding: 10px;
         }
     }
 }

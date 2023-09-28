@@ -1,5 +1,6 @@
 .div_youtube{
-    height: 100vh;
+    height: 900px;
+    width: 100vw;
    display: flex;
    flex-direction: column;
    align-items: center;
@@ -20,7 +21,7 @@
     
     iframe{
       width: 1161px;
-      height: 653px;
+      height: 553px;
     }
    }
 }

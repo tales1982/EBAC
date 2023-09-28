@@ -49,3 +49,24 @@ closeDivHamburg .addEventListener('click', function () {
 
     divHamburg.style.maxWidth = '0px';
 });
+
+
+// aba de creditos
+const arrow = document.querySelector('#arrow-up');
+let divCredits = document.querySelector('.invisible_credits');
+divCredits.style.maxHeight = '0px'
+const image = document.querySelector('#arrow-up img');
+
+
+arrow.addEventListener('click',function(){
+    
+    if(divCredits.style.maxHeight  == '0px'){
+        divCredits.style.maxHeight = '160px';
+         image.src = '/dist/images/The_Nun_icons/arrow-button.png';
+         
+    }else{
+        divCredits.style.maxHeight = '0px';
+        image.src = '/dist/images/The_Nun_icons/white-up-arrow-png-511098.png';
+    }
+
+})
