@@ -29,25 +29,85 @@
         background-color: #000;
         
         &-img{
-            img{
-                margin-right: 100px;
+                display: flex;
+                flex-direction:column;
+                align-items:center ;
+                margin-right: 150px;
+                
+
+            &--img1{
                 margin-top: 20px;
                 width: 35vw;
-            }         
+                
+            } 
+            
+            &--img2{
+                margin-top: 70px;
+                width: 25vw;
+                
+            }
+
+            &--img3{
+                margin-top:30px;
+                width: 13vw;
+                
+            }
+
+            &--img4{
+                margin-top: 20px;
+               ul{
+                display: flex;
+                flex-direction: row;
+                list-style: none;
+
+                li{
+                    margin: 0 5px;
+                    img{
+                        width: 26px
+                    }
+
+                }
+
+                li:last-child{
+                    @include flex-row();
+                    padding-bottom: 4px;
+                    img{
+                        width: 36px;
+                    }
+                }
+               }
+                
+            }
+
+            &--img5{
+                @include flex-col();
+              
+            
+                .paragrafo{  
+                    margin-top: 10px;
+                    margin-bottom: 10px;
+                    background-color: #ced4af;
+                    width: 100%;
+                    height:100%;
+                    border-radius: 30px;
+                    padding: 10px 40px;
+                }
+ 
+            }
         }
 
         &__nav{
         @include flex-col();
         align-items: end;
             &--item{
-                margin-top: 30px;
+                margin-top: 10px;
                 @include flex-row();
                 width: 100px;
                 position: fixed;
                 
                 button{
                 cursor: pointer;
-                margin-right: 5px;
+                margin-right: 2px;
                 width: 50px;
                 height: 30px;
                 background-color: #00000000;
@@ -96,17 +156,22 @@
                     padding: 15px 20px;
                     height: 50px;
                     color: #f3f3f3;
+
+                    
                     a{
+                        
                         text-decoration: none;
+                        
                         color: #f3f3f3;
                         
                     }
                     &:hover , a:hover{
+                        width:100%;
                         background-color: #ced4af;
                         color: #000;
+                        font-weight: bold
                     }
-                    
-
+                  
                 }
 
             &--subLi{ 
