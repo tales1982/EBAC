@@ -7,12 +7,21 @@
     width: 100%;
     color: #f1e6de;
     padding:  30px;
+
+
     
     &__img{
 
         img{
             max-width: 200px;
             padding-bottom: 5px;
+        }
+
+        @media (max-width:425px) {
+            img{
+                max-width: 160px;
+            }
+            
         }
         
     }
@@ -28,6 +37,11 @@
             margin-top: 20px;
             letter-spacing: 0.5px;
             padding: 3px;
+
+            @media (max-width:425px) {
+                font-size: 14px;
+                padding: 0;
+            }
         }
     }
 }
