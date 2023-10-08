@@ -46,3 +46,24 @@ agora execute o comando
 # .parcel-cache
 # dist
 # node_modules
+
+## Adcionando o CDN de efeitos
+
+1° adcione o link do css no head
+# <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+2° adcione o script
+# <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+adcione o arquivo src-->main.js
+#  AOS.init();
+
+3° Para aplicar o efeito adciono o elemento (data-aos="nome-do-efeito") na dic oou no elemento que quero que sofra a animacao. 
+# data-aos="fade-right"
+
+# finalizaco do projeto
+para subir na vercel adcione o build no json
+# "build":"parcel build src/index.html",
+
+e apage a 
+# "main": "index.js",

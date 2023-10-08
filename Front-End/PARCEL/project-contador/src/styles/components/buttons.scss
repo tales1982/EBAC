@@ -1,3 +1,5 @@
+@use '/src/styles/variables';
+
 .button{
     padding: 12px;
     font-size: 18px;
@@ -8,8 +10,8 @@
 
 
     &--primary{
-        color: #fff;
-        background-color: #4f2ac3;
+        color: variables.$textcolor;
+        background-color: variables.$purple;
     }
 
     @media(max-width: 640px){
