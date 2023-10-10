@@ -1,0 +1,29 @@
+@use '/src/styles/variables';
+
+.button{
+    padding: 12px;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    white-space: nowrap;//Esse elemento diz se deve ou nao quebra a linha no casso aqui nao e pra quebra linha.
+
+
+    &--primary{
+        color: variables.$textcolor;
+        background-color: variables.$purple;
+    }
+
+    @media(max-width: 640px){
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    @media (max-width: 1024px){
+        display: flex;
+        align-items: center;
+    }
+
+}

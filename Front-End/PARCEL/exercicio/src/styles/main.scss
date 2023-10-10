@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Bree Serif', serif;
+}
+
+.home{
+    display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: #4b484f;
+        width: 100vw;
+        height: 100vh;
+
+p{
+            position:absolute;
+            color: #d0c69f;
+            font-weight: bold;
+            font-size: 26px;
+            margin-top: 830px;
+
+            span{
+                color: red;
+            }
+            
+        }
+    .container{
+  
+        img{
+            
+            width: auto;
+            height: 100vh;
+        }
+        
+    }
+}
