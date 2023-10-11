@@ -1,30 +1,92 @@
-function Animal(tipoDeAnimal, sexo, idade){
-this.tipoDeAnimal = tipoDeAnimal;
-this.sexo = sexo;
-this.idade = idade
+// • Crie uma classe de uma abstração; 
+// • Crie pelo menos duas classes que sejam herdeiras da classe criada anteriormente; 
+// • Crie pelo menos três instâncias de objetos; 
+// • No repositório do curso crie uma branchchamada oo_jse armazene o código do exercício. 
+// • Envie o link do repositório através da plataforma.
 
+
+//Classe PAI
+function Pessoa(nome, cpf, tel){
+    this.nome = nome;
+    this.cpf = cpf;
+    this.tel = tel;
+        this.apresentacao = function(){
+            console.log(`
+Nome: ${this.nome}, CPF: ${this.cpf}, Telephone: ${this.tel}
+`);
+        }
 }
 
 
-function Veterinario(proprietario,animal,sexo,idade){
-    this.proprietario = proprietario;
-    Animal.call(this, animal,sexo,idade,);
+//Classe Filho
+function Cliente(nome, cpf, tel, adress, saldo){
+    Pessoa.call(this,nome,cpf,tel);
+    this.adress = adress;
+    this.saldo = saldo;
+        this.situacaoFinaceira = function(){
+            if(this.saldo <= 0){
+                console.log(`
+Desculpe voce nao possuir saldo suficiente R$ ${this.saldo}. 
+`)
+            }else{
+                console.log(`
+Ola seu saldo e de R$${this.saldo} boas compras.
+`)
+            }
+        }
+}
+
+//Classe Filho
+function Funcionarios(nome,cpf,tel,adress,salario, ferias,foltas){
+    Pessoa.call(this,nome,cpf,tel);
+    this.adress = adress;
+    this.salario = salario;
+    this.ferias = ferias;
+    this.foltas = foltas;
+        this.saldoFerias = function(){
+            if(this.ferias <= 0){
+                console.log(`
+Ola ${this.nome} voce ja utilizou todos os seus dias de ferias.
+`)
+            }else{
+                console.log(`
+Ola ${this.nome} ainda te resta ${this.ferias} dias de ferias
+`)
+            }
+        }
+        this.foltasAno = function(){
+            if(this.foltas == 0){
+                this.salario *= 1.1
+                console.log(`
+${this.nome} por ter sido um exelente fucionario, 
+e nao ter foltado nenhun dia este ano voce teve um almento de 10%
+no seu salario. O seu salario subiu para ${this.salario.toFixed(2)}.}
+`)
+            }
+        }
 
 }
 
-function Diagnostico(nomeDoAnimal, tipoDeAnimal, diagnostico, proprietario){
+const fucionario1 = new Funcionarios('Theo','000-000-000-00', 621789456,'Grevenmacher',3000,2,0);
+console.log(fucionario1);
+fucionario1.foltasAno()
+fucionario1.saldoFerias();
+console.log(fucionario1);
 
-    this.nomeDoAnimal = nomeDoAnimal;
-    this.diagnostico = diagnostico;
-    Veterinario.call(this,proprietario);
-    Animal.call(this,tipoDeAnimal);
-}
+const fucionario2 = new Funcionarios('Thomas','000-000-000-00', 621222987,'Grevenmacher',3500,2,2);
+console.log(fucionario2);
+fucionario2.foltasAno()
+fucionario2.saldoFerias();
+console.log(fucionario2);
 
 
-const dog = new Animal('cachorro','macho', 5);
-const cliente1 = new Veterinario('Tales','cachorro','macho',7);
-const cachorroDoente = new Diagnostico('Toto','cachorro','Perna Quebrada','Tales')
 
+const cliente1 = new Cliente('Tales','000-000-000-00','661 12 40 40','Luxembourg',5000);
+console.log(cliente1)
+cliente1.apresentacao()
+cliente1.situacaoFinaceira()
 
-//console.log(cat)
-console.log(cachorroDoente)
+const cliente2 = new Cliente('Suleia','000-000-000-00','691 12 40 40','Luxembourg',-10);
+console.log(cliente2)
+cliente2.apresentacao()
+cliente2.situacaoFinaceira()
