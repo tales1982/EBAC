@@ -10,7 +10,6 @@ function Pessoa(nome){
 
 const pessoa1 = new Pessoa('Tales')
 
-
 function Fucionario(nome, cargo, salario){
     
     this.cargo = cargo;
@@ -20,6 +19,4 @@ function Fucionario(nome, cargo, salario){
 }
 
 const fucionario1 = new Fucionario('tales' , 'dev-full-stack', 3000);
-
-
 fucionario1.dizOi();
