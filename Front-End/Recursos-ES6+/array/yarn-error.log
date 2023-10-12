@@ -1,0 +1,47 @@
+Arguments: 
+  /home/tales/.asdf/installs/nodejs/15.0.1/bin/node /home/tales/.asdf/installs/nodejs/15.0.1/bin/yarn add @babel/cores @babel/cli
+
+PATH: 
+  /home/tales/.asdf/plugins/nodejs/shims:/home/tales/.asdf/installs/nodejs/15.0.1/bin:/home/tales/.asdf/shims:/home/tales/.asdf/bin:/home/tales/.yarn/bin:/home/tales/.config/yarn/global/node_modules/.bin:/home/tales/.yarn/bin:/home/tales/.config/yarn/global/node_modules/.bin:/home/tales/.nvm/versions/node/v18.16.1/bin:/opt/gradle/latest/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  15.0.1
+
+Platform: 
+  linux x64
+
+Trace: 
+  Error: https://registry.yarnpkg.com/@babel%2fcores: Not found
+      at Request.params.callback [as _callback] (/home/tales/.asdf/installs/nodejs/15.0.1/lib/node_modules/yarn/lib/cli.js:66145:18)
+      at Request.self.callback (/home/tales/.asdf/installs/nodejs/15.0.1/lib/node_modules/yarn/lib/cli.js:140890:22)
+      at Request.emit (node:events:327:20)
+      at Request.<anonymous> (/home/tales/.asdf/installs/nodejs/15.0.1/lib/node_modules/yarn/lib/cli.js:141862:10)
+      at Request.emit (node:events:327:20)
+      at IncomingMessage.<anonymous> (/home/tales/.asdf/installs/nodejs/15.0.1/lib/node_modules/yarn/lib/cli.js:141784:12)
+      at Object.onceWrapper (node:events:433:28)
+      at IncomingMessage.emit (node:events:339:22)
+      at endReadableNT (node:internal/streams/readable:1289:12)
+      at processTicksAndRejections (node:internal/process/task_queues:80:21)
+
+npm manifest: 
+  {
+    "name": "array",
+    "version": "1.0.0",
+    "main": "index.js",
+    "author": "tales",
+    "license": "MIT",
+    "scripts": {
+      "build": "babel src -d dist",
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "browserslist":">0.25%"
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
