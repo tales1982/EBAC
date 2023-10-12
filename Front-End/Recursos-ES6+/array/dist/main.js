@@ -137,6 +137,7 @@ console.log(somaValorArrow);
 
 var animais = ['Cachorro', 'Gato', 'Passarinho', 'Galinha'];
 var todosAnimais = animais.reduce(function (acumulado, itemAtual) {
-  return acumulado += itemAtual;
+  return acumulado += " ".concat(itemAtual); //vou colocar o ${} para poder ter um espaco entre os animais
 });
+
 console.log(todosAnimais);
