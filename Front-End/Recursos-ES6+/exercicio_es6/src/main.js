@@ -11,12 +11,13 @@ const alunoseBAC = [
   ];
   
   function filtraAlunos() {
-    alunoseBAC.forEach(function(aluno) {
-      if (aluno.nota >= 6) {
-        console.log(`Aluno(a): ${aluno.nome} , Nota: ${aluno.nota}`);
-      }
+    const alunosAprovados = alunoseBAC.filter(function(aluno) {
+      return aluno.nota >= 6;
+    });
+  
+    alunosAprovados.forEach(function(aluno) {
+      console.log(`Aluno(a): ${aluno.nome}, Nota: ${aluno.nota}`);
     });
   }
   
   filtraAlunos();
-  
