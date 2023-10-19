@@ -13,6 +13,9 @@ class Pessoa {
 }
 
 //ENCAPSULAMENTO PRIVADO OU PUBLICO
+// O protected esta disponivel nas classe e na classes filhos
+// Ja o private so esta disponivel somente na classe onde e declarado na, na classe mae.
+// O static esta disponivel somente al nivo da classe,  nao passando para as instancia, somente na classe
 class ContaBancaria{
     protected saldo: number = 0;
     numeroConta: number;
@@ -35,9 +38,13 @@ class ContaBancaria{
         
 }
 
+// Eranças (extends)
 class ContaBancariaPessoaFisica extends ContaBancaria{
-    depositar(valor: number): void {
-        this.saldo = valor * 2
+    depositar(valor: number): void {//Polimorfismo, e quando altero a funcao que erdei.
+        this.saldo = valor
     }
 }
+
+const contaDoPedro = new ContaBancariaPessoaFisica(123456)
+console.log(ContaBancaria.retonarNumerosDoBanco())
 

@@ -24,6 +24,9 @@ var Pessoa = /** @class */ (function () {
     return Pessoa;
 }());
 //ENCAPSULAMENTO PRIVADO OU PUBLICO
+// O protected esta disponivel nas classe e na classes filhos
+// Ja o private so esta disponivel somente na classe onde e declarado na, na classe mae.
+// O static esta disponivel somente al nivo da classe,  nao passando para as instancia, somente na classe
 var ContaBancaria = /** @class */ (function () {
     function ContaBancaria(numeroConta) {
         this.saldo = 0;
@@ -40,13 +43,16 @@ var ContaBancaria = /** @class */ (function () {
     };
     return ContaBancaria;
 }());
+// Eranças (extends)
 var ContaBancariaPessoaFisica = /** @class */ (function (_super) {
     __extends(ContaBancariaPessoaFisica, _super);
     function ContaBancariaPessoaFisica() {
         return _super !== null && _super.apply(this, arguments) || this;
     }
     ContaBancariaPessoaFisica.prototype.depositar = function (valor) {
-        this.saldo = valor * 2;
+        this.saldo = valor;
     };
     return ContaBancariaPessoaFisica;
 }(ContaBancaria));
+var contaDoPedro = new ContaBancariaPessoaFisica(123456);
+console.log(ContaBancaria.retonarNumerosDoBanco());
