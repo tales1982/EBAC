@@ -31,23 +31,23 @@ var ContaSalario = /** @class */ (function (_super) {
     };
     return ContaSalario;
 }(Conta));
-var ContaCorrente = /** @class */ (function (_super) {
-    __extends(ContaCorrente, _super);
-    function ContaCorrente() {
+var ContaCorrente2 = /** @class */ (function (_super) {
+    __extends(ContaCorrente2, _super);
+    function ContaCorrente2() {
         var _this = _super !== null && _super.apply(this, arguments) || this;
         _this.taxaTransferencia = 0;
         return _this;
     }
-    ContaCorrente.prototype.transferir = function (valor, destinatario) {
+    ContaCorrente2.prototype.transferir = function (valor, destinatario) {
         destinatario.saldo += valor;
         return true;
     };
     ;
-    return ContaCorrente;
+    return ContaCorrente2;
 }(Conta));
-var TheoContaCorrente = new ContaCorrente(2022, 790);
+var TheoContaCorrente = new ContaCorrente2(2022, 790);
 console.log(TheoContaCorrente);
-var TalesContaCorrente = new ContaCorrente(1982, 500);
+var TalesContaCorrente = new ContaCorrente2(1982, 500);
 TalesContaCorrente.transferir(360, TheoContaCorrente);
 console.log(TalesContaCorrente);
 console.log(TheoContaCorrente);

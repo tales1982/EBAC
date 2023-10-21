@@ -27,7 +27,7 @@ interface IExemplo3 extends IExemplo2{
     telefone: number
 }
 
-class ContaCorrente extends Conta implements ITransacional, IExemplo3{
+class ContaCorrente2 extends Conta implements ITransacional, IExemplo3{
     telefone: number;
     cnpj: number;
     
@@ -39,9 +39,9 @@ class ContaCorrente extends Conta implements ITransacional, IExemplo3{
     
 }
 
-const TheoContaCorrente = new ContaCorrente(2022, 790)
+const TheoContaCorrente = new ContaCorrente2(2022, 790)
 console.log(TheoContaCorrente)
-const TalesContaCorrente = new ContaCorrente(1982,500)
+const TalesContaCorrente = new ContaCorrente2(1982,500)
 
 TalesContaCorrente.transferir(360,TheoContaCorrente)
 console.log(TalesContaCorrente)
