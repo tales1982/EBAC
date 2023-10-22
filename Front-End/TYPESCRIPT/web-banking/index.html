@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"
+        defer></script>
+    <script src="dist/js/main.js" defer></script>
+    <link rel="stylesheet" href="dist/css/main.css">
+    <title>Web Banking</title>
+</head>
+
+<body>
+    <section class="secao1">
+        <div class="container">
+            <div class="row ">
+                <div class="col-12">
+                    <div class="text-center">
+                        <h1>Web Banking</h1>
+                        <p>Choisissez votre option ci-dessous.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h2 style="display: none;" id="merci">Merci pour la visite.</h2>
+    </section>
+    <section class="secao2">
+        <div>
+            <ul class="secao2--ul" id="choiceButton">
+                <div class="secao2--ul__row">
+                    <button class="secao2--ul__liItem btnOptions" id="newClient">Nouveau client</button>
+                    <button class="secao2--ul__liItem btnOptions" id="depot">Dépôt</button>
+                </div>
+                <div class="secao2--ul__row">
+                    <button class="secao2--ul__liItem btnOptions" id="solde">solde</button>
+                    <button class="secao2--ul__liItem btnOptions" id="retrait">retrait</button>
+                </div>
+                <div class="secao2--ul__row">
+                    <button class="secao2--ul__liItem btnOptions" id="transfert">transfert</button>
+                    <button class="secao2--ul__liItem btnOptions" id="sorti">Sorti</button>
+                </div>
+            </ul>
+            
+        </div>
+        
+        <div class="secao2--res res_newClient" style="display: none;">
+            <form id="formClient" onsubmit="return false;">
+                
+            </form>
+            <span id="text-res"></span>
+        </div> 
+    </section>
+</body>
+</html>

@@ -1,0 +1,12 @@
+{
+    "compilerOptions": {
+      "target": "ES5",
+      "module": "CommonJS",
+      "outDir": "./src/scripts",
+      "rootDir": "./src/scripts",
+      "strict": true
+    },
+    "include": ["src/scripts/*.ts"],
+    "exclude": ["node_modules"]
+  }
+  
