@@ -1,0 +1,5 @@
+{
+    "editor.codeActionWidget.includeNearbyQuickfixes": true,
+    "editor.columnSelection": true,
+    "editor.definitionLinkOpensInPeek": true
+}
