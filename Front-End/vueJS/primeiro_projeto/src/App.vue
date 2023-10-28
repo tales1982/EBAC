@@ -14,6 +14,8 @@ const gostaDoMario = false
 const estado = reactive({
     contador:  0,
     email: '',
+    saldo: 5000,
+    transferindo: 0,
 })
 
 
@@ -31,7 +33,16 @@ function decrementar(){
     estado.contador--
 }
 
+//usando a desestruturacao do objeto
+function mostraSaldoFuturo(){
+    const {saldo, transferindo} = estado;
+    return saldo - transferindo;
+}
 
+function validarTranferencia(){
+    const {saldo, transferindo} = estado;
+    return saldo >= transferindo;
+}
 
 
 
@@ -40,8 +51,7 @@ function decrementar(){
 <template>
 <h1>Ola {{nome}}</h1>
 
-<h2>utilizando imagens</h2>
-<!--Tenho 3 maneira de adcionar fotos-->
+<h2>utilizando imagens</h2>estado.
 <!-- 1° utilizando o : antes do src imagem importqdo do javascript -->
 <img class="img" :src="imagenDoMario" alt="Mario">
 
@@ -73,8 +83,20 @@ function decrementar(){
 <h2>Capturando valores do input</h2>
 <!--Capturando valores do imput-->
 {{ estado.email }}<!--Recebe o resultado do meu input-->
-<br>
 <input type="email" @keyup="capturandoResultado">
+<br>
+<hr>
+<h2>Aplique estilos de forma condicional</h2>
+
+<p>Saldo:</p> {{ estado.saldo }}
+<p>Transferindo:</p>{{ estado.transferindo }}
+<p>Saldo depois da transferencia:</p>{{ mostraSaldoFuturo() }}
+<!--Se meu saldo transferido for maior que o saldo meu  input ficar vermelho APLICANDO A CLASS INVALIDO-->
+<input :class="{invalido: !validarTranferencia()}" @keyup="evento => estado.transferindo = evento.target.value" type="number" placeholder="quantidade pra transferencia">
+<button v-if="validarTranferencia()">Transferir</button>
+<span v-else>Valor maior que o saldo</span>
+
+
 </template>
 
 
@@ -86,5 +108,10 @@ function decrementar(){
 .img{
     max-width: 100px; 
     margin: 5px;
+}
+
+.invalido{
+    outline-color: red;
+    border-color: red;
 }
 </style>
