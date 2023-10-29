@@ -16,6 +16,9 @@ const estado = reactive({
     email: '',
     saldo: 5000,
     transferindo: 0,
+    nomesFilhos:['Theo','Thomas','Adria','Alex','Gabriel','Camily'],
+    nomeAdcionado:'',
+    nomesRecebidos:[],
 })
 
 
@@ -43,6 +46,22 @@ function validarTranferencia(){
     const {saldo, transferindo} = estado;
     return saldo >= transferindo;
 }
+
+//Funcao que cadastra os nomes dinamicamente butao cadastra
+function btnCadastraNomes(){
+
+    if(estado.nomeAdcionado.length >= 3){
+        estado.nomesRecebidos.push(estado.nomeAdcionado) 
+    console.log(estado.nomesRecebidos)
+    }else{
+        alert('Insira mais caracteres, o nome e muito curto')
+    }
+    
+}
+
+
+//ARRAYS tradicional 
+const nomesFamilhia = ['Tales','Theo','Thomas','Alex']
 
 
 
@@ -96,6 +115,29 @@ function validarTranferencia(){
 <button v-if="validarTranferencia()">Transferir</button>
 <span v-else>Valor maior que o saldo</span>
 
+<br>
+<hr>
+<h2>Rederizando ARRAYS utilizando o v-for</h2>
+<ul>
+    <h2>array tradicional</h2>
+    <li v-for="nomeDoArray in nomesFamilhia">
+    {{ nomeDoArray}}
+    </li>
+</ul>
+
+<ul>
+    <h2>Array utilizando o reactive()</h2>
+    <li v-for="qualquerNome in estado.nomesFilhos">{{ qualquerNome }}</li>
+</ul>
+<br>
+<hr>
+
+
+<h2>Declarando array de pessoas dinamicamente</h2>
+<p v-for="nome in estado.nomesRecebidos">{{ nome }}</p><!--Posso adcionar em qualquer tags-->
+<input @keyup="evento => estado.nomeAdcionado = evento.target.value" type="text" placeholder="Adcione umapessoa">
+<button @click="btnCadastraNomes" type="button">Cadastra nomes</button>
+
 
 </template>
 
@@ -115,3 +157,4 @@ function validarTranferencia(){
     border-color: red;
 }
 </style>
+Recebidos
