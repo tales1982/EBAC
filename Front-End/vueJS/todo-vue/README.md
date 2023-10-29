@@ -27,3 +27,12 @@ npm run dev
 ```sh
 npm run build
 ```
+
+### Estale o Bootstrap
+
+```sh
+npm i bootstrap@5.3.2
+```
+
+### Fassa a importaçao do arquivo no main.js
+# import'bootstrap/dist/css/bootstrap.min.css';
