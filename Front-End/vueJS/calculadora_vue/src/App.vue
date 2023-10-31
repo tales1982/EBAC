@@ -19,7 +19,6 @@ const calcularResultado = () => {
     return estado.valorInput1 * estado.valorInput2;
   }
 };
-
 </script>
 
 
@@ -29,22 +28,16 @@ const calcularResultado = () => {
         <cabecalho />
         <form  class="form-control formulario">
             <input v-model="estado.valorInput1" type="number" placeholder="Digite o 1° numero" class="form-control text-center">
-
-
             <select v-model="estado.valorSelecionado" name="calculo" id="calc" class="form-control text-center">
             <option value="sum">+</option>
             <option value="min">-</option>
             <option value="div">/</option>
             <option value="mult">*</option>
         </select>
-
         <input v-model="estado.valorInput2" type="number" placeholder="Digite o 2° numero" class="form-control text-center">
         <p class=" m-2"> = </p>
-
         <span class="form-control text-center ms-1">{{ calcularResultado() }}</span>
-
-    </form>
-    
+    </form>   
     </div>
 </template>
 
