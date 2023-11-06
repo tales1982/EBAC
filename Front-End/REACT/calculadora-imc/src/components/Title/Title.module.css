@@ -1,0 +1,16 @@
+.title{
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px;
+    align-items: center;
+    height: 200px;
+    background-color: #ccc;
+}
+
+.titleH1{
+
+}
+
+.titleH2{
+    
+}
