@@ -1,16 +1,12 @@
+
 .title{
     display: flex;
     flex-direction: column;
-    padding-top: 50px;
+    max-width: 1440px;
+    width: 100%;
+    margin-top: 20px;
+    justify-content: center;
     align-items: center;
-    height: 200px;
-    background-color: #ccc;
-}
+    height: 100px;
 
-.titleH1{
-
-}
-
-.titleH2{
-    
 }
