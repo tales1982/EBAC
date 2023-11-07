@@ -10,3 +10,45 @@
     height: 100px;
 
 }
+
+@media only screen and (min-width: 300px) and (max-width: 425px){
+    
+    .title{
+        width: auto;
+        margin-top: 0px;
+        justify-content: center;
+        align-items: center;
+     
+    }
+    .titleH2{
+        text-align: center;
+        margin: 5px;
+        font-size: 1em;
+    }
+    .titleH1{
+        text-align: center;
+        font-size: 1.5em;
+        margin: 0;
+    }
+
+ }
+
+ @media only screen and (min-width: 426px) and (max-width: 767px){
+    
+   
+.title{
+    width: auto;
+    margin-top: 0px;
+    justify-content: center;
+    align-items: center;
+ 
+}
+.titleH2{
+    margin: 5px;
+    font-size: 1em;
+}
+.titleH1{
+    margin: 0;
+}
+
+ }
