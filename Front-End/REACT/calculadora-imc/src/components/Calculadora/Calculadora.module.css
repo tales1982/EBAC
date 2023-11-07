@@ -202,7 +202,7 @@ font-size: 20px;
     
     .bodyCalc{
     
-        height:650px;
+        height:700px;
         width: auto;
     }
     
@@ -226,6 +226,11 @@ font-size: 20px;
         text-align: center;
         border-radius: 10px;
     }
+
+    .resultUlLi{
+        height: 40px;
+        padding: 5px;
+    }
     
     
     .divLi1{
@@ -246,7 +251,7 @@ font-size: 20px;
     
     .bodyCalc{
     
-        height:650px;
+        height:700px;
         width: auto;
     }
     
@@ -269,6 +274,11 @@ font-size: 20px;
         height: 300px;
         text-align: center;
         border-radius: 10px;
+    }
+    
+    .resultUlLi{
+        height: 40px;
+        padding: 5px;
     }
     
     
