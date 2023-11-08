@@ -7,3 +7,19 @@ end_of_line = lf
 charset = utf-8
 trim_trailing_whitespace = true
 insert_final_newline = true
+
+# root = true: Isso define o arquivo .editorconfig atual como o arquivo raiz do projeto. Quando definido como verdadeiro, este arquivo se aplica a todo o projeto e suas configurações serão usadas a menos que sejam substituídas por outros arquivos .editorconfig em diretórios específicos.
+
+# [*]: Isso define um conjunto de regras que se aplicam a todos os arquivos no projeto.
+
+# indent_style = space: Define o estilo de indentação como espaço (espaços em branco) em vez de tabulação.
+
+# indent_size = 2: Define o tamanho da indentação como 2 espaços. Isso significa que, ao pressionar a tecla "Tab", o editor inserirá dois espaços.
+
+# end_of_line = lf: Define o caractere de fim de linha como LF (Line Feed). Isso é comum em sistemas Unix e Linux.
+
+# charset = utf-8: Define o conjunto de caracteres como UTF-8, que é amplamente utilizado para codificar texto em vários idiomas.
+
+# trim_trailing_whitespace = true: Remove espaços em branco no final das linhas quando um arquivo é salvo.
+
+# insert_final_newline = true: Adiciona uma nova linha vazia ao final do arquivo quando ele é salvo.

@@ -24,3 +24,36 @@
     "src"
   ]
 }
+/*
+"target": "es5": Define a versão do ECMAScript (ES) para a qual o código TypeScript será compilado. Neste caso, o código será compilado para ES5, tornando-o compatível com navegadores mais antigos.
+
+"lib": [...]: Especifica as bibliotecas e recursos disponíveis para o código TypeScript. Isso inclui o Document Object Model (DOM), DOM iterável e recursos do ESNext.
+
+"allowJs": true: Permite a inclusão de arquivos JavaScript no projeto e os compila junto com o TypeScript.
+
+"skipLibCheck": true: Ignora a verificação de tipos em arquivos de definição de bibliotecas (arquivos .d.ts), o que pode melhorar o desempenho da compilação.
+
+"esModuleInterop": true: Habilita a interoperabilidade com módulos CommonJS e ES6, permitindo importar módulos CommonJS em código TypeScript.
+
+"allowSyntheticDefaultImports": true: Permite a importação de módulos que não têm um valor padrão como se tivessem um valor padrão.
+
+"strict": true: Ativa um conjunto de opções estritas que ajudam a identificar e prevenir erros de código comuns.
+
+"forceConsistentCasingInFileNames": true: Garante que o uso de letras maiúsculas e minúsculas em nomes de arquivos seja consistente, o que é importante em sistemas de arquivos que diferenciam maiúsculas de minúsculas.
+
+"noFallthroughCasesInSwitch": true: Exige que todos os casos de instruções switch incluam uma instrução break ou outra forma de saída.
+
+"module": "esnext": Define o formato de módulo a ser usado na saída da compilação. Neste caso, é ESNext, que é a forma mais moderna de módulos ES.
+
+"moduleResolution": "node": Especifica a estratégia de resolução de módulos como "node", que segue as regras de resolução de módulos do Node.js.
+
+"resolveJsonModule": true: Permite a importação de módulos JSON.
+
+"isolatedModules": true: Ativa o modo de "Módulos Isolados", que restringe certas verificações e otimizações para permitir a compilação mais rápida de arquivos individuais.
+
+"noEmit": true: Evita que o TypeScript gere arquivos JavaScript (.js). Isso pode ser útil em projetos em que você não deseja gerar saída JavaScript, como em um projeto que usa somente TypeScript no lado do servidor.
+
+"jsx": "react-jsx": Define o tipo de JSX a ser usado, neste caso, "react-jsx" para código JSX no contexto do React.
+
+"include": [...]: Especifica quais arquivos e diretórios devem ser incluídos no processo de compilação. Neste caso, apenas os arquivos do diretório "src" serão incluídos.
+*/
