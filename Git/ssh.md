@@ -16,3 +16,6 @@ Execute o seguinte comando, substituindo <seu-token> pelo token que você gerou:
 bash
 Copy code
 git remote set-url origin https://<seu-token>@github.com/tales1982/NOME-DO-REPOSITORIO.git
+
+toda veis que criar um repositorio tenho que adcionar um novo tokem
+ou quando mudar de computador.
