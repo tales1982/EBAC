@@ -1,6 +1,6 @@
 # Crie um token de acesso pessoal:
 
-Acesse as configurações da sua conta no GitHub.
+# Acesse as configurações da sua conta no GitHub.
 Vá para "Settings" (Configurações) > "Developer settings" (Configurações de desenvolvedor) > "Personal access tokens" (Tokens de acesso pessoal).
 Clique em "Generate token" (Gerar token).
 Selecione as permissões necessárias para o seu caso (pelo menos "repo" para repositórios privados ou "public_repo" para repositórios públicos).
