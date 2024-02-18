@@ -1,0 +1,159 @@
+body {
+  background-color: #36204e;
+}
+
+@keyframes moveToRight {
+  0% {
+    transform: translateX(-300px);
+  }
+  25% {
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translateX(300px);
+  }
+  75% {
+    transform: translateX(-300px);
+  }
+  100% {
+    transform: translateX(-300px);
+  }
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes zoomInOut {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes colorChange {
+  0% {
+    color: rgb(0, 204, 255);
+  }
+  50% {
+    color: rgb(255, 145, 0);
+  }
+  100% {
+    color: rgb(0, 255, 42);
+  }
+}
+
+
+.App {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+.Header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  align-items: center;
+  background-color: #141b29;
+  color: #e0e6e9;
+  height: 150px;
+}
+
+.paragraphe{
+  font-size: 30px;
+  font-weight: bold;
+  color: #e0e6e9;
+  margin: 10px;
+}
+
+.section-text{
+  display: flex;
+  flex-direction: column;
+  width: 900px;
+}
+
+.elem1 {
+  animation: moveToRight 8s ease-in-out infinite;
+}
+
+.elem2 {
+  animation: fadeInOut 8s ease-in-out infinite;
+}
+
+.elem3 {
+  animation: fadeInOut 8s ease-in-out infinite 2s; /* Adicionando um atraso de 2 segundos para começar após o primeiro elemento */
+}
+
+.elem4 {
+  animation: zoomInOut 8s ease-in-out infinite;
+}
+
+.elem5 {
+  animation: zoomInOut 8s ease-in-out infinite 2s; /* Adicionando um atraso de 2 segundos para começar após o primeiro elemento */
+}
+
+.elem6 {
+  animation: rotate 8s linear infinite;
+}
+
+.elem7 {
+  animation: rotate 8s linear infinite 2s; /* Adicionando um atraso de 2 segundos para começar após o primeiro elemento */
+}
+
+.elem8 {
+  animation: pulse 8s ease-in-out infinite;
+}
+
+.elem9 {
+  animation: pulse 8s ease-in-out infinite 2s; /* Adicionando um atraso de 2 segundos para começar após o primeiro elemento */
+}
+
+.elem10 {
+  animation: colorChange 4s ease-in-out infinite;
+}
+.Footer{
+  height: 50px;
+  width: 100vw;
+  background-color: #141b29;
+  color: #e0e6e9;
+}
