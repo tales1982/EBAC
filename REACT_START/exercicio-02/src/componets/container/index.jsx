@@ -1,10 +1,12 @@
 import React from "react";
-import { Bubble } from "./styles";
+import { Bubble, RoundBorder } from "./styles";
 
 const Container = () => {
   return (
     <>
-      <Bubble />
+      <Bubble>
+        <RoundBorder />
+      </Bubble>
     </>
   );
 };

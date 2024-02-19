@@ -5,7 +5,7 @@ import cor from "../../styles/color";
 export const SquareDiv = styled.div`
   display: flex;
   flex-direction: column;
-  height: 550px;
+  height: 500px;
   width: 300px;
   position: absolute;
   background-color: ${cor.bodyCalc};
@@ -16,9 +16,9 @@ export const SquareDiv = styled.div`
   border-radius: 20px;
 `;
 
-export const Input = styled.input`
+export const Span = styled.span`
   text-align: end;
-  height: 80px;
+  height: 70px;
   background-color: ${cor.text};
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
@@ -26,11 +26,7 @@ export const Input = styled.input`
   color: ${cor.darkBlue};
   font-weight: bold;
   border: none;
-
-  &:focus,
-  &:active {
-    outline: none; /* Remove a borda padrão do navegador ao focar */
-  }
+  padding-right: 10px;
 `;
 
 export const ResultSpan = styled.span`

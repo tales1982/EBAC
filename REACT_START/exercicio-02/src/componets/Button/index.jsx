@@ -1,9 +1,9 @@
 import PropTypes from "prop-types";
 import { Button } from "./styles";
 
-const ButtonCalc = ({ valor, styles, click }) => {
+const ButtonCalc = ({ valor, styles, onClick }) => {
   return (
-    <Button onClick={() => click(valor)} style={styles}>
+    <Button onClick={() => onClick(valor)} style={styles}>
       {valor}
     </Button>
   );
@@ -12,7 +12,7 @@ const ButtonCalc = ({ valor, styles, click }) => {
 ButtonCalc.propTypes = {
   valor: PropTypes.string.isRequired,
   styles: PropTypes.object,
-  click: PropTypes.func,
+  onClick: PropTypes.func,
 };
 
 export default ButtonCalc;
