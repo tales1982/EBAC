@@ -1,0 +1,9 @@
+{
+  "editor.formatOnSave": false ,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit"
+  }
+}
+/*"editor.formatOnSave": false: Quando essa configuração está definida como false, ela impede que o Visual Studio Code formate automaticamente o código quando você salva um arquivo. Isso é útil se você preferir formatar o código manualmente ou se estiver usando uma extensão diferente para o formatação que não está relacionada ao ESLint.
+
+"editor.codeActionsOnSave": { "source.fixAll.eslint": true }: Esta configuração ativa a ação automática de correção de código ao salvar um arquivo. Se você estiver usando o ESLint no seu projeto e essa configuração estiver habilitada, o ESLint tentará corrigir automaticamente os problemas de estilo e qualidade de código detectados no arquivo quando você o salva. Em outras palavras, o ESLint tentará aplicar suas regras e corrigir os problemas automaticamente.*/
